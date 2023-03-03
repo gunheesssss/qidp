@@ -532,6 +532,39 @@ table .table_sort span {
   justify-content: flex-end;
 }
 
+/* 가로 2단 테이블 */
+
+
+.stack_table {
+  display: inline-flex;
+}
+.stack_table .left_area,
+.stack_table .right_area {
+  width: calc(50% - 20px);
+}
+
+.stack_table .control_btn{
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 5px 0;
+}
+
+.stack_table .control_btn button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--gray5);
+  border-left: 1px solid var(--gray5);
+  border-right: 1px solid var(--gray5);
+  background-color: var(--white);
+}
+.stack_table .control_btn button:last-child {
+  border-bottom: 1px solid var(--gray5);
+}
+
 /* 검색영역 */
 
 .search {
@@ -658,3 +691,4 @@ table .table_sort span {
   width: 100%;
   color: var(--yellow);
 }
+

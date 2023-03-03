@@ -37,23 +37,130 @@
             <section>
                 <div class="type_wrap">
                     <div class="type_header">
-                        <input type="text">
+                        <input type="text" placeholder="서식유형 입력">
                         <button>
                             <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>                        
+                        <button>
                             <img class="icon" src="../../../public/image/folder.svg" alt="">
                         </button>                        
                     </div>
                     <ul>
                         <li>상품설명서</li>
                         <li>상품요약서</li>
-                        <li>상품약관</li>
+                        <li class="active">상품약관</li>
                         <li>요율산정서</li>
                     </ul>
                 </div>
-                <div class="control_table">
+                <div class="stack_table">
                     <div class="left_area">
                         <div class="ct_header">
-
+                            <select>
+                                <option value="" hidden selected>항목구분</option>
+                            </select>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="main_table">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 22%;">
+                                    <col style="width: 18%;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 20%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_l">
+                                                <span>항목명</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_l">
+                                                <span>항목구분</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_c">
+                                                <span>검증유형</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_c">
+                                                <span>등록자</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_c">
+                                                <span>등록일시</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active">
+                                        <td>
+                                            <p class="td_l">123</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_l">상품명</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">상품소분류</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">판매여부</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">등록부서</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="td_l">123</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_l">상품명</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">상품소분류</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">판매여부</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">등록부서</p>
+                                        </td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
                         </div>
                     </div> 
                     <div class="control_btn">
@@ -90,6 +197,102 @@
                                 <span>검색</span>
                                 <img class="icon" src="../../../public/image/star.svg" alt="">
                             </button>
+                        </div>
+                        <div class="main_table">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 22%;">
+                                    <col style="width: 18%;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 20%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_l">
+                                                <span>항목명</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_l">
+                                                <span>항목구분</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_c">
+                                                <span>검증유형</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_c">
+                                                <span>등록자</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table_sort" data-sort="">
+                                            <div class="td_c">
+                                                <span>등록일시</span>
+                                                <div class="sort_wrap">
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                    <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active">
+                                        <td>
+                                            <p class="td_l">123</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_l">상품명</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">상품소분류</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">판매여부</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">등록부서</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="td_l">123</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_l">상품명</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">상품소분류</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">판매여부</p>
+                                        </td>
+                                        <td>
+                                            <p class="td_c">등록부서</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

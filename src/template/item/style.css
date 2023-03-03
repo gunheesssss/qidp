@@ -1,0 +1,52 @@
+section {
+    padding: 12px 10px 20px;
+    display: flex;
+}
+
+.type_wrap {
+    width: 200px;
+    padding-right: 10px;
+}
+
+.type_wrap .type_header { 
+    padding-bottom: 5px;
+    height: 30px;
+    display: flex;
+}
+
+.type_wrap .type_header input{
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 100%;
+}
+
+.type_wrap .type_header button {
+    margin-left: 5px;
+}
+
+.type_wrap ul {
+    height: calc(100% - 30px);
+    background-color: var(--white);
+    border: 1px solid var(--gray5);
+    padding: 3px;
+    overflow-y: auto;
+}
+
+.type_wrap ul li {
+    padding: 3px 5px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.type_wrap ul li:hover {
+    background-color: var(--list-hover);
+}
+.type_wrap ul li.active {
+    background-color: var(--list-select);
+}
+
+
+.stack_table {
+    width: calc(100% - 200px);
+}
