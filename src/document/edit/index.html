@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품별 문서관리</title>
+    <link rel="stylesheet" href="../../../public/css/reset.css">
+    <link rel="stylesheet" href="../../../public/css/layout.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../../../public/js/jquery-3.6.0.min.js"></script>
+    <script src="../../../public/js/global.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("header").load("../../../public/component/header.html");
+            $("nav").load("../../../public/component/nav.html");
+            $("[data-modal='search']").load("./modal/search.html");
+            $("[data-modal='reference']").load("./modal/reference.html");
+            $("[data-modal='contrast']").load("./modal/contrast.html");
+            $("[data-modal='record']").load("./modal/record.html");
+        });
+    </script>
+    <header>
+    </header>
+    <main>
+        <nav>
+        </nav>
+        <div class="tab_wrap">
+            <ul class="tab_list">
+                <li class="active">
+                    <span>문서 작성/편집</span>
+                    <button>
+                        <img class="icon" src="../../../public/image/close.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+            <section>
+                <div class="index_content">
+                    <div class="search">
+                        <img class="icon" src="../../../public/image/search.svg" alt="">
+                        <input type="text" placeholder="목차검색">
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="left_area">
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="right_area">
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                            <button>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list_wrap">
+                        <ul>
+                            <li>
+                                <p class="list_title">
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                    <span>Level 0 목차 1</span>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="list_title">
+                                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                            <span>Level 0 목차 1</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p class="list_title">
+                                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                    <span>Level 0 목차 1</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="list_title">
+                                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                    <span>Level 0 목차 1</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="list_title">
+                                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                    <span>Level 0 목차 1</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p class="list_title">
+                                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                            <span>Level 0 목차 1</span>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p class="list_title">
+                                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                    <span>Level 0 목차 1</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="form_area" style="background-color: #e1ffdb;">
+
+                </div>
+                <div class="accordion">
+                    <div class="acc_header">
+                        <button>
+                            <img class="icon" src="../../../public/image/star.svg" alt="">
+                        </button>
+                        <div class="right_area">
+                            <button onclick="showModal('search', '문서검색')">
+                                <img class="icon" src="../../../public/image/star.svg" alt="">
+                            </button>
+                            <button onclick="showModal('reference', '내용조회')">
+                                <img class="icon" src="../../../public/image/star.svg" alt="">
+                            </button>
+                            <button onclick="showModal('contrast', '신구대비표')">
+                                <img class="icon" src="../../../public/image/star.svg" alt="">
+                            </button>
+                            <button onclick="showModal('record', '개정이력')">
+                                <img class="icon" src="../../../public/image/star.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <img class="icon" src="../../../public/image/search.svg" alt="">
+                        <input type="text" placeholder="오류메시지확인">
+                    </div>
+                    <ul>
+                        <li>
+                            <p class="list_title">
+                                항목매칭오류
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </p>
+                            <div class="list_content active">
+                                <span>
+                                    제30조(보험료의 납입이 연체되는 경우)이(가) 존재하지 않습니다
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="list_title">
+                                별표누락
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </p>
+                            <div class="list_content">
+                            </div>
+                        </li>
+                        <li>
+                            <p class="list_title">
+                                색인미생성
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            </p>
+                            <div class="list_content">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="modal_bg">
+        <div class="modal_area">
+            <div class="modal_header">
+                <span class="modal_title"></span>
+                <div class="btn_wrap">
+                    <button>
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                    <button>
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                    <button onclick="closeModal()">
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="modal_content" data-modal="search">
+            </div>
+            <div class="modal_content" data-modal="reference">
+            </div>
+            <div class="modal_content" data-modal="contrast">
+            </div>
+            <div class="modal_content" data-modal="record">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

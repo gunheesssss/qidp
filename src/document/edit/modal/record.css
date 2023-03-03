@@ -1,0 +1,39 @@
+.record_modal {
+  display: flex;
+  overflow: hidden;
+  width: 1100px;
+  height: 680px;
+}
+
+.record_modal .record_header {
+  height: 30px;
+  background-color: var(--navy3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  padding: 0 5px;
+}
+.record_modal .table_wrap {
+  width: 45%;
+  height: 100%;
+}
+.record_modal .table_wrap .record_header {
+  padding-left: 12px;
+}
+.record_modal .table {
+  height: calc(100% - 30px);
+}
+.record_modal .accordion {
+  width: 55%;
+  height: 100%;
+  border-left: 1px solid var(--gray5);
+}
+
+.record_modal .accordion ul {
+  height: calc(100% - 30px);
+}
+
+.record_modal .accordion .list_content {
+  height: 200px;
+}

@@ -1,0 +1,148 @@
+@font-face {
+  font-display: block;
+  font-family: "NotoSans";
+  font-weight: 400;
+  src: local("NotoSansKR"),
+    url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSansKR-Regular.woff") format("woff"),
+    url("../fonts/NotoSansKR-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-display: block;
+  font-family: "NotoSans";
+  font-weight: 500;
+  src: local("NotoSansKR"),
+    url("../fonts/NotoSansKR-Medium.woff2") format("woff2"),
+    url("../fonts/NotoSansKR-Medium.woff") format("woff"),
+    url("../fonts/NotoSansKR-Medium.otf") format("otf");
+}
+
+@font-face {
+  font-display: block;
+  font-family: "NotoSans";
+  font-weight: 600;
+  src: local("NotoSansKR"),
+    url("../fonts/NotoSansKR-Bold.woff2") format("woff2"),
+    url("../fonts/NotoSansKR-Bold.woff") format("woff"),
+    url("../fonts/NotoSansKR-Bold.otf") format("otf");
+}
+
+:root {
+  --black: #000000;
+  --gray1: #f6f6f6;
+  --gray2: #f3f3f3;
+  --gray3: #e5e4e4;
+  --gray4: #e0e0e0;
+  --gray5: #979798;
+  --gray6: #333333;
+
+  --navy1: #3f5e7d;
+  --navy2: #344d67;
+  --navy3: #2d4157;
+  --navy4: #2c3240;
+
+  --list: #f2f4f6;
+  --white: #ffffff;
+  --line: rgba(255, 255, 255, 0.2);
+  --blue: #5b7eff;
+  --yellow: #ffaa00;
+
+  --light-hover: #e6e7e9;
+  --light-press: #ced0d4;
+
+  --dark-hover: #18699d;
+
+  --list-hover: #e0f3fd;
+  --list-press: #c2e7fb;
+  --list-select: #c3dff2;
+
+  --fs-l: 16px;
+  --fs-m: 14px;
+  --fs-s: 12px;
+  --fs-xs: 11px;
+
+  --fw-b: 700;
+  --fw-m: 500;
+  --fw-r: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  font-size: var(--fs-xs);
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+html,
+body {
+  max-height: 100vh;
+  height: 100%;
+  min-width: 1200px;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol,
+li {
+  list-style: none;
+}
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+fieldset {
+  border: none;
+}
+
+body,
+button,
+input,
+select,
+table,
+textarea {
+  color: var(--black);
+  font-family: "NotoSans", sans-serif;
+  font-weight: var(--fw-r);
+  font-size: var(--fs-s);
+  outline: none;
+}
+
+body.modalopen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+.fx_c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

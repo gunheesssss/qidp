@@ -1,0 +1,20 @@
+.contrast_modal {
+  display: flex;
+  overflow: hidden;
+  width: 1100px;
+  height: 680px;
+}
+
+.contrast_modal .index_content {
+  width: 300px;
+  height: 100%;
+}
+
+.contrast_modal .form_area {
+  width: calc(50% - 150px);
+}
+
+.contrast_modal .form_area:nth-of-type(2) {
+  border-left: 1px solid var(--gray5);
+  border-right: 1px solid var(--gray5);
+}

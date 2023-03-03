@@ -1,0 +1,39 @@
+section {
+  display: flex;
+}
+section .index_content {
+  width: 300px;
+  border-right: 1px solid var(--gray5);
+}
+
+section .form_area {
+  width: calc(100% - 300px - 200px);
+}
+
+section .accordion {
+  width: 200px;
+  height: 100%;
+  background-color: var(--navy3);
+  border-left: 1px solid var(--gray5);
+}
+
+section .accordion .search {
+  background-color: var(--white);
+}
+
+section .accordion .acc_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0 5px;
+}
+
+section .accordion ul {
+  background-color: var(--white);
+  height: calc(100% - 30px - 32px);
+}
+
+section .accordion .list_content {
+  height: 200px;
+}

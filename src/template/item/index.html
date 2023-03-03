@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서식별 문서관리</title>
+    <link rel="stylesheet" href="../../../public/css/reset.css">
+    <link rel="stylesheet" href="../../../public/css/layout.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../../../public/js/jquery-3.6.0.min.js"></script>
+    <script src="../../../public/js/global.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+          $("header").load("../../../public/component/header.html");
+          $("nav").load("../../../public/component/nav.html");
+        });
+      </script>
+    <header>
+    </header>
+    <main>
+        <nav>
+        </nav>
+        <div class="tab_wrap">
+            <ul class="tab_list">
+                <li class="active">
+                    <span>항목관리</span>
+                    <button>
+                        <img class="icon" src="../../../public/image/close.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+            <section>
+                <div class="type_wrap">
+                    <div class="type_header">
+                        <input type="text">
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>                        
+                    </div>
+                    <ul>
+                        <li>상품설명서</li>
+                        <li>상품요약서</li>
+                        <li>상품약관</li>
+                        <li>요율산정서</li>
+                    </ul>
+                </div>
+                <div class="control_table">
+                    <div class="left_area">
+                        <div class="ct_header">
+
+                        </div>
+                    </div> 
+                    <div class="control_btn">
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="right_area">
+                        <div class="search_header">
+                            <p>
+                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                <span>상품약관 문서 관리 항목 : 00건</span>
+                            </p>
+                            <button class="search_btn">
+                                <div class="icon"></div>
+                                <span>검색</span>
+                                <img class="icon" src="../../../public/image/star.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
