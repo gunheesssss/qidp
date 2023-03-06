@@ -547,7 +547,7 @@ table .table_sort span {
   width: 40px;
   display: flex;
   flex-direction: column;
-  padding: 30px 5px 0;
+  padding: 40px 5px 0;
 }
 
 .stack_table .control_btn button {
@@ -563,6 +563,42 @@ table .table_sort span {
 }
 .stack_table .control_btn button:last-child {
   border-bottom: 1px solid var(--gray5);
+}
+
+.stack_table .ct_header{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+
+.stack_table .ct_header .search {
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 32px;
+  border: 1px solid var(--gray5);
+  background-color: var(--white);
+}
+.stack_table .ct_header select {
+  height: 32px;
+  border: 1px solid var(--gray5);
+  width: 100px;
+  padding: 0 5px;
+}
+
+.stack_table .search_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.stack_table .search_header p {
+  display: flex;
+  align-items: center;
+}
+.stack_table .search_header p img {
+  margin-right: 5px;
 }
 
 /* 검색영역 */
