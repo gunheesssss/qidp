@@ -18,6 +18,7 @@
         $(document).ready(function () {
           $("header").load("../../../public/component/header.html");
           $("nav").load("../../../public/component/nav.html");
+          $("[data-modal='reg']").load("./modal/reg.html");
         });
       </script>
     <header>
@@ -28,16 +29,228 @@
         <div class="tab_wrap">
             <ul class="tab_list">
                 <li class="active">
-                    <span>미완성</span>
+                    <span>상품분류관리</span>
                     <button>
                         <img class="icon" src="../../../public/image/close.svg" alt="">
                     </button>
                 </li>
             </ul>
-            <section>
+            <section class="base_pd">
+                <div class="table_wrap">
+                    <div class="search_header">
+                        <div class="search">
+                            <img class="icon" src="../../../public/image/search.svg" alt="">
+                            <input type="text" placeholder="분류명">
+                        </div>
+                        <button onclick="showModal('reg', '목차 등록')">
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>                        
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>                        
+                    </div>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 25%;">
+                                <col style="width: 30%;">
+                                <col style="width: 22.5%;">
+                                <col style="width: 22.5%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="table_sort td_c">
+                                        <div class="td_c">
+                                            <span>버전</span>
+                                            <div class="sort_wrap" data-sort="">
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="table_sort">
+                                        <div class="td_l">
+                                            <span>개정내용</span>
+                                            <div class="sort_wrap" data-sort="">
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="table_sort">
+                                        <div class="td_c">
+                                            <span>담당자</span>
+                                            <div class="sort_wrap" data-sort="">
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="table_sort">
+                                        <div class="td_c">
+                                            <span>등록일시</span>
+                                            <div class="sort_wrap" data-sort="">
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                            </div>
+                                        </div>
+                                    </th>
+            
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="active">
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_l">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_l">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="index_wrap">
+                    <p class="index_header">
+                        <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        <span>선택된 분류 내용</span>
+                    </p>
+                    <div class="index_content">
+                        <div class="search">
+                            <img class="icon" src="../../../public/image/search.svg" alt="">
+                            <input type="text" placeholder="분류검색">
+                        </div>
+                        <div class="btn_wrap">
+                            <div class="left_area">
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="right_area">
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                                <button>
+                                    <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list_wrap">
+                            <ul>
+                                <li>
+                                    <p class="list_title">
+                                        <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                        <span>Level 0 목차 1</span>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p class="list_title">
+                                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                <span>Level 0 목차 1</span>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p class="list_title">
+                                                        <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                        <span>Level 0 목차 1</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="list_title">
+                                                        <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                        <span>Level 0 목차 1</span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="list_title">
+                                                        <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                        <span>Level 0 목차 1</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="list_title">
+                                                <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                <span>Level 0 목차 1</span>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p class="list_title">
+                                                        <img class="icon" src="../../../public/image/folder.svg" alt="">
+                                                        <span>Level 0 목차 1</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
+    <div class="modal_bg">
+        <div class="modal_area">
+            <div class="modal_header">
+                <span class="modal_title"></span>
+                <div class="btn_wrap">
+                    <button>
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                    <button>
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                    <button onclick="closeModal()">
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="modal_content" data-modal="reg"></div>
+        </div>
+    </div>
 </body>
 
 </html>
