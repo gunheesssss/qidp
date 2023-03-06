@@ -130,7 +130,7 @@ textarea {
   color: var(--black);
   font-family: "NotoSans", sans-serif;
   font-weight: var(--fw-r);
-  font-size: var(--fs-s);
+  font-size: var(--fs-xs);
   outline: none;
 }
 
@@ -144,5 +144,218 @@ body.modalopen {
 .fx_c {
   display: flex;
   align-items: center;
+}
+
+/* form */
+
+select {
+  appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea:focus::placeholder,
+input[type="password"]:focus::placeholder,
+input[type="number"]:focus::placeholder,
+input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.input_style{
+  padding: 0 5px;
+  height: 28px;
+  border: 1px solid var(--gray5);
+  background-color: var(--white);
+}
+
+textarea {
+  padding: 5px;
+  resize: none;
+  border: 1px solid var(--gray5);
+  background-color: var(--white);
+
+}
+
+/* select */
+.select_style {
+  background: url("../image/select_arrow.svg") center no-repeat;
+  background-size: 8px;
+  outline: 0 none;
+  cursor: pointer;
+  height: 28px;
+  border: 1px solid var(--gray5);
+  background-color: var(--white);
+  padding: 0 8px 0 5px;
+  background-position: calc(100% - 8px) center;
+}
+
+select option {
+  padding: 5px 0;
+}
+
+select:required:invalid {
+  color: gray;
+}
+
+.radio_label,
+.check_label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.check_style {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  width: 14px;
+  height: 14px;
+}
+
+.check_style .check_full {
+  display: none;
+}
+
+.check_label input[type="checkbox"]:checked + .check_style .check_empty {
+  display: none;
+}
+
+.check_label input[type="checkbox"]:checked + .check_style .check_full {
+  display: var(--black);
+}
+
+.check_label span {
+  margin-left: 9px;
+  font-size: 12px;
+}
+/* 토글 */
+.check_toggle {
+  position: relative;
+  display: flex;
+}
+
+.check_toggle_style {
+  width: 30px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #cccdd1;
+  padding: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.check_toggle_style ~ span {
+  margin-left: 5px;  
+}
+
+.check_toggle_style ~ .toggle_t {
+  display: none;
+}
+
+.check_toggle_style::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: var(--white);
+  position: absolute;
+  left: 2px;
+  transition: 0.2s;
+}
+
+.check_toggle input[type="checkbox"]:checked + .check_toggle_style {
+  background-color: var(--blue);
+}
+
+.check_toggle input[type="checkbox"]:checked + .check_toggle_style::after {
+  transform: translate(14px, 0);
+}
+
+.check_toggle input[type="checkbox"]:checked ~ .toggle_t {
+  display: block;
+}
+.check_toggle input[type="checkbox"]:checked ~ .toggle_f {
+  display: none;
+}
+
+/* 라디오 박스 */
+.radio_label span {
+  margin-left: 5px;
+}
+
+.radio_style {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--navy);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.radio_style::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--navy);
+  display: none;
+}
+
+.radio_label input[type="radio"]:checked + .radio_style::after {
+  display: block;
+}
+
+/* 업로드 박스 */
+.upload_box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 12px;
+}
+
+.upload_box .upload_btn {
+  padding: 4px;
+  background-color: #eee;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.upload_box .upload_btn span {
+  font-size: 12px;
+  color: #808080;
+}
+
+.upload_box .upload_btn input[type="file"] {
+  display: none;
+}
+
+
+.fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fields > * {
+  width: calc(50% - 5px)
 }
