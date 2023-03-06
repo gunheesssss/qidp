@@ -326,6 +326,7 @@ select:required:invalid {
   align-items: center;
   justify-content: center;
   background-color: var(--white);
+  border: 1px solid var(--gray5);
 }
 
 .radio_style::after {
@@ -333,7 +334,7 @@ select:required:invalid {
   width: 8px;
   height: 8px;
   border-radius: 4px;
-  background-color: var(--navy);
+  background-color: var(--gray5);
   display: none;
 }
 

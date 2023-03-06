@@ -1,6 +1,6 @@
 .icon {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 
 header {
@@ -784,3 +784,12 @@ table .table_sort span {
   color: var(--yellow);
 }
 
+
+.icon_tit {
+  display: flex;
+  align-items: center;
+}
+
+.icon_tit img {
+  margin-right: 5px;
+}
