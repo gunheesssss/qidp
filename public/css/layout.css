@@ -460,19 +460,19 @@ section {
 
 /* 선없는 테이블 */
 
+.table {
+  background: repeating-linear-gradient(
+    var(--list) 0,
+    var(--list) 34px,
+    var(--white) 0,
+    var(--white) 68px
+  );
+}
 
 .table thead {
   border-bottom: 1px solid var(--gray4);
 }
 
-/* .table {
-  background: repeating-linear-gradient(
-    var(--white) 0,
-    var(--white) 34px,
-    var(--list) 0,
-    var(--list) 78px
-  );
-} */
 
 .table tbody td {
   padding: 0 3px;
@@ -681,6 +681,10 @@ table .table_sort span {
   width: 90px;
   border-radius: 3px;
   padding: 0 5px;
+}
+.search_btn .icon {
+  width: 13px;
+  height: 13px;
 }
 
 /* 목차 */

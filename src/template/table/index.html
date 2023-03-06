@@ -18,6 +18,8 @@
         $(document).ready(function () {
           $("header").load("../../../public/component/header.html");
           $("nav").load("../../../public/component/nav.html");
+          $("[data-modal='reg']").load("./modal/reg.html");
+
         });
       </script>
     <header>
@@ -41,7 +43,7 @@
                             <img class="icon" src="../../../public/image/search.svg" alt="">
                             <input type="text" placeholder="목차명">
                         </div>
-                        <button>
+                        <button onclick="showModal('reg', '목차 등록')">
                             <img class="icon" src="../../../public/image/folder.svg" alt="">
                         </button>                        
                         <button>
@@ -231,6 +233,25 @@
             </section>
         </div>
     </main>
+    <div class="modal_bg">
+        <div class="modal_area">
+            <div class="modal_header">
+                <span class="modal_title"></span>
+                <div class="btn_wrap">
+                    <button>
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                    <button>
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                    <button onclick="closeModal()">
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="modal_content" data-modal="reg"></div>
+        </div>
+    </div>
 </body>
 
 </html>
