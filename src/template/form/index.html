@@ -17,6 +17,8 @@
       $(document).ready(function () {
         $('header').load('../../../public/component/header.html');
         $('nav').load('../../../public/component/nav.html');
+        $("[data-modal='reg']").load("./modal/reg.html");
+
       });
     </script>
     <header></header>
@@ -80,14 +82,14 @@
                 </p>
                 <div class="page">
                   <span>000 건</span>
-                  <select>
+                  <select class="select_s">
                     <option value="1">1</option>
                     <option value="2">2</option>
                   </select>
                 </div>
               </div>
               <div class="right_area">
-                <button>
+                <button onclick="showModal('reg', '서식등록')">
                   <img
                     class="icon"
                     src="../../../public/image/ico_create_item.svg"
@@ -322,5 +324,24 @@
         </section>
       </div>
     </main>
+    <div class="modal_bg">
+      <div class="modal_area">
+          <div class="modal_header">
+              <span class="modal_title"></span>
+              <div class="btn_wrap">
+                  <button>
+                      <img class="icon" src="../../../public/image/star.svg" alt="">
+                  </button>
+                  <button>
+                      <img class="icon" src="../../../public/image/star.svg" alt="">
+                  </button>
+                  <button onclick="closeModal()">
+                      <img class="icon" src="../../../public/image/star.svg" alt="">
+                  </button>
+              </div>
+          </div>
+          <div class="modal_content" data-modal="reg"></div>
+      </div>
+  </div>
   </body>
 </html>

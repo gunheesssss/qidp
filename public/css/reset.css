@@ -158,7 +158,6 @@ select {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   margin: 0;
 }
 
@@ -206,6 +205,22 @@ textarea {
   background-position: calc(100% - 8px) center;
 }
 
+.select_s {
+  background: url("../image/select_arrow_s.svg") center no-repeat;
+  background-position: calc(100% - 5px) center;
+  padding: 0 5px;
+  background-size: 8px;
+  outline: 0 none;
+  cursor: pointer;
+  height: 20px;
+  border: 1px solid var(--gray5);
+  background-color: var(--white);
+  width: 50px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: var(--fs-xs);
+}
+
 select option {
   padding: 5px 0;
 }
@@ -251,6 +266,7 @@ select:required:invalid {
 .check_toggle {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 
 .check_toggle_style {
@@ -260,7 +276,6 @@ select:required:invalid {
   background-color: #cccdd1;
   padding: 2px;
   position: relative;
-  cursor: pointer;
 }
 
 .check_toggle_style ~ span {
@@ -311,6 +326,7 @@ select:required:invalid {
   align-items: center;
   justify-content: center;
   background-color: var(--white);
+  border: 1px solid var(--gray5);
 }
 
 .radio_style::after {
@@ -318,7 +334,7 @@ select:required:invalid {
   width: 8px;
   height: 8px;
   border-radius: 4px;
-  background-color: var(--navy);
+  background-color: var(--gray5);
   display: none;
 }
 

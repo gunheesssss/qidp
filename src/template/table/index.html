@@ -14,12 +14,24 @@
 
   <body>
     <script>
+<<<<<<< HEAD
       $(document).ready(function () {
         $('header').load('../../../public/component/header.html');
         $('nav').load('../../../public/component/nav.html');
       });
     </script>
     <header></header>
+=======
+        $(document).ready(function () {
+          $("header").load("../../../public/component/header.html");
+          $("nav").load("../../../public/component/nav.html");
+          $("[data-modal='reg']").load("./modal/reg.html");
+
+        });
+      </script>
+    <header>
+    </header>
+>>>>>>> ec9aa32b28faa2150a1594b75596533e064248b9
     <main>
       <nav></nav>
       <div class="tab_wrap">
@@ -82,6 +94,7 @@
                             alt=""
                           />
                         </div>
+<<<<<<< HEAD
                       </div>
                     </th>
                     <th class="table_sort">
@@ -221,6 +234,96 @@
                       alt=""
                     />
                   </button>
+=======
+                        <button onclick="showModal('reg', '목차 등록')">
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>                        
+                        <button>
+                            <img class="icon" src="../../../public/image/folder.svg" alt="">
+                        </button>                        
+                    </div>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 25%;">
+                                <col style="width: 30%;">
+                                <col style="width: 22.5%;">
+                                <col style="width: 22.5%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="table_sort td_c">
+                                        <div class="td_c">
+                                            <span>버전</span>
+                                            <div class="sort_wrap" data-sort="">
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="table_sort">
+                                        <div class="td_l">
+                                            <span>개정내용</span>
+                                            <div class="sort_wrap" data-sort="">
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="table_sort">
+                                        <div class="td_c">
+                                            <span>담당자</span>
+                                            <div class="sort_wrap" data-sort="">
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="table_sort">
+                                        <div class="td_c">
+                                            <span>등록일시</span>
+                                            <div class="sort_wrap" data-sort="">
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
+                                                <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
+                                            </div>
+                                        </div>
+                                    </th>
+            
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="active">
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_l">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_l">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                    <td class="td_c">
+                                        <span>123</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+>>>>>>> ec9aa32b28faa2150a1594b75596533e064248b9
                 </div>
                 <div class="right_area">
                   <button>
@@ -338,5 +441,30 @@
         </section>
       </div>
     </main>
+<<<<<<< HEAD
   </body>
 </html>
+=======
+    <div class="modal_bg">
+        <div class="modal_area">
+            <div class="modal_header">
+                <span class="modal_title"></span>
+                <div class="btn_wrap">
+                    <button>
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                    <button>
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                    <button onclick="closeModal()">
+                        <img class="icon" src="../../../public/image/star.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="modal_content" data-modal="reg"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+>>>>>>> ec9aa32b28faa2150a1594b75596533e064248b9

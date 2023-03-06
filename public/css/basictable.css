@@ -41,7 +41,6 @@ section {
     border: 1px solid var(--gray5);
     background-color: var(--white);
     margin-right: 16px;
-    border-radius: 4px;
   }
   .search_wrap .search input {
     border: none;
@@ -58,15 +57,8 @@ section {
   
   .page select {
     margin-left: 5px;
-    height: 20px;
-    border: 1px solid var(--gray5);
-    background-color: var(--white);
-    width: 50px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: var(--fs-xs);
-    padding-left: 5px;
   }
+  
   .table,
   .main_table {
     height: calc(100% - 76px);
