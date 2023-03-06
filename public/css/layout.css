@@ -555,11 +555,12 @@ table .table_sort span {
 }
 
 .type_wrap ul {
-  height: calc(100% - 30px);
+  height: calc(100% - 40px);
   background-color: var(--white);
   border: 1px solid var(--gray5);
   padding: 3px;
   overflow-y: auto;
+
 }
 
 .type_wrap ul li {

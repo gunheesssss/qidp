@@ -11,3 +11,7 @@ section {
 .stack_table {
     width: calc(100% - 200px);
 }
+
+.stack_table .main_table {
+    height: calc(100% - 40px);
+}
