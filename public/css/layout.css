@@ -460,9 +460,19 @@ section {
 
 /* 선없는 테이블 */
 
+
 .table thead {
   border-bottom: 1px solid var(--gray4);
 }
+
+/* .table {
+  background: repeating-linear-gradient(
+    var(--white) 0,
+    var(--white) 34px,
+    var(--list) 0,
+    var(--list) 78px
+  );
+} */
 
 .table tbody td {
   padding: 0 3px;
@@ -582,14 +592,14 @@ table .table_sort span {
 }
 .stack_table .left_area,
 .stack_table .right_area {
-  width: calc(50% - 20px);
+  width: calc(50% - 25px);
 }
 
 .stack_table .control_btn{
-  width: 40px;
+  width: 50px;
   display: flex;
   flex-direction: column;
-  padding: 40px 5px 0;
+  padding: 40px 10px 0;
 }
 
 .stack_table .control_btn button {

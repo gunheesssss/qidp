@@ -141,6 +141,10 @@ body.modalopen {
   position: fixed;
 }
 
+section.base_pd {
+  padding: 12px 10px 20px;
+}
+
 .fx_c {
   display: flex;
   align-items: center;
