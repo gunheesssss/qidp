@@ -1,351 +1,359 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>서식별 문서관리</title>
-    <link rel="stylesheet" href="../../../public/css/reset.css">
-    <link rel="stylesheet" href="../../../public/css/layout.css">
+    <link rel="stylesheet" href="../../../public/css/reset.css" />
+    <link rel="stylesheet" href="../../../public/css/layout.css" />
     <link rel="stylesheet" href="../../../public/css/basictable.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="../../../public/js/jquery-3.6.0.min.js"></script>
     <script src="../../../public/js/global.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        $(document).ready(function () {
-          $("header").load("../../../public/component/header.html");
-          $("nav").load("../../../public/component/nav.html");
-          $("[data-modal='reg']").load('./modal/reg.html');
-        });
-      </script>
-    <header>
-    </header>
+      $(document).ready(function () {
+        $('header').load('../../../public/component/header.html');
+        $('nav').load('../../../public/component/nav.html');
+        $("[data-modal='reg']").load('./modal/reg.html');
+      });
+    </script>
+    <header></header>
     <main>
-        <nav>
-        </nav>
-        <div class="tab_wrap">
-            <ul class="tab_list">
-                <li class="active">
-                    <span>표준약관관리</span>
-                    <button>
-                        <img class="icon" src="../../../public/image/close.svg" alt="">
-                    </button>
-                </li>
-            </ul>
-            <section>
-                <div class="section_header">
-                  <div class="search_wrap">
-                    <div class="left_area">
-                      <div class="search">
-                        <img
-                          class="icon"
-                          src="../../../public/image/search.svg"
-                          alt=""
-                        />
-                        <input type="text" placeholder="상품명/상품코드" />
-                        <img
-                          class="icon"
-                          src="../../../public/image/template_input_code.svg"
-                          alt=""
-                        />
-                      </div>
-                      <img
-                        class="icon"
-                        src="../../../public/image/template_selected_code.svg"
-                        alt=""
-                      />
-                      <p>
-                        <span>선택한 서식명(서식코드) : </span>
-                        <span>(DOC0000001) (무배당) 상품약관</span>
-                      </p>
-                    </div>
-                    <button class="search_btn">
-                      <div class="icon"></div>
-                      <span>검색</span>
-                      <img
-                        class="icon"
-                        src="../../../public/image/btn_search.svg"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                  <div class="page_wrap">
-                    <div class="left_area">
-                      <p>
-                        <img
-                          class="icon"
-                          src="../../../public/image/doc_current_document.svg"
-                          alt=""
-                        />
-                        <span>해당 상품에 등록된 문서</span>
-                      </p>
-                      <div class="page">
-                        <span>000 건</span>
-                        <select class="select_s">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="right_area">
-                      <button onclick="showModal('reg', '표준약관등록')">
-                        <img
-                          class="icon"
-                          src="../../../public/image/doc_register_document.svg"
-                          alt=""
-                        />
-                      </button>
-                      <button>
-                        <img
-                          class="icon"
-                          src="../../../public/image/doc_register_document.svg"
-                          alt=""
-                        />
-                      </button>
-                      <button>
-                        <img
-                          class="icon"
-                          src="../../../public/image/doc_register_document.svg"
-                          alt=""
-                        />
-                      </button>
-                    </div>
-                  </div>
+      <nav></nav>
+      <div class="tab_wrap">
+        <ul class="tab_list">
+          <li class="active">
+            <span>표준약관관리</span>
+            <button>
+              <img class="icon" src="../../../public/image/close.svg" alt="" />
+            </button>
+          </li>
+        </ul>
+        <section>
+          <div class="section_header">
+            <div class="search_wrap">
+              <div class="left_area">
+                <div class="search">
+                  <img
+                    class="icon"
+                    src="../../../public/image/search.svg"
+                    alt=""
+                  />
+                  <input type="text" placeholder="상품명/상품코드" />
+                  <img
+                    class="icon"
+                    src="../../../public/image/template_input_code.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="main_table">
-                  <table>
-                    <colgroup>
-                      <col style="width: 12%" />
-                      <col style="width: 18%" />
-                      <col style="width: 18%" />
-                      <col style="width: 10%" />
-                      <col style="width: 10%" />
-                      <col style="width: 10%" />
-                      <col style="width: 10%" />
-                      <col style="width: 12%" />
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th class="table_sort" data-sort="">
-                          <div class="td_l">
-                            <span>서식코드</span>
-                            <div class="sort_wrap">
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon asc"
-                                alt=""
-                              />
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon desc"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </th>
-                        <th class="table_sort" data-sort="">
-                          <div class="td_l">
-                            <span>문서명</span>
-                            <div class="sort_wrap">
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon asc"
-                                alt=""
-                              />
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon desc"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </th>
-                        <th class="table_sort" data-sort="">
-                          <div class="td_l">
-                            <span>문서유형</span>
-                            <div class="sort_wrap">
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon asc"
-                                alt=""
-                              />
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon desc"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </th>
-                        <th class="table_sort" data-sort="">
-                          <div class="td_c">
-                            <span>버전</span>
-                            <div class="sort_wrap">
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon asc"
-                                alt=""
-                              />
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon desc"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </th>
-                        <th class="table_sort" data-sort="">
-                          <div class="td_c">
-                            <span>등록부서</span>
-                            <div class="sort_wrap">
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon asc"
-                                alt=""
-                              />
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon desc"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </th>
-                        <th class="table_sort" data-sort="">
-                          <div class="td_c">
-                            <span>등록자</span>
-                            <div class="sort_wrap">
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon asc"
-                                alt=""
-                              />
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon desc"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </th>
-                        <th class="table_sort" data-sort="">
-                          <div class="td_c">
-                            <span>등록일시</span>
-                            <div class="sort_wrap">
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon asc"
-                                alt=""
-                              />
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon desc"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </th>
-                        <th class="table_sort" data-sort="">
-                          <div class="td_c">
-                            <span>최종변경일시</span>
-                            <div class="sort_wrap">
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon asc"
-                                alt=""
-                              />
-                              <img
-                                src="../../../public/image/sort_icon.svg"
-                                class="sort_icon desc"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="active">
-                        <td>
-                          <p class="td_l">123</p>
-                        </td>
-                        <td>
-                          <p class="td_l">상품명</p>
-                        </td>
-                        <td>
-                          <p class="td_l">상품소분류</p>
-                        </td>
-                        <td>
-                          <p class="td_c">판매여부</p>
-                        </td>
-                        <td>
-                          <p class="td_c">등록부서</p>
-                        </td>
-                        <td>
-                          <p class="td_c">등록자</p>
-                        </td>
-                        <td>
-                          <p class="td_c">등록일시</p>
-                        </td>
-                        <td>
-                          <p class="td_c">최종변경일시</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p class="td_l">123</p>
-                        </td>
-                        <td>
-                          <p class="td_l">상품명</p>
-                        </td>
-                        <td>
-                          <p class="td_l">상품소분류</p>
-                        </td>
-                        <td>
-                          <p class="td_c">판매여부</p>
-                        </td>
-                        <td>
-                          <p class="td_c">등록부서</p>
-                        </td>
-                        <td>
-                          <p class="td_c">등록자</p>
-                        </td>
-                        <td>
-                          <p class="td_c">등록일시</p>
-                        </td>
-                        <td>
-                          <p class="td_c">최종변경일시</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-        </div>
-    </main>
-    <div class="modal_bg">
-        <div class="modal_area">
-          <div class="modal_header">
-            <span class="modal_title"></span>
-            <div class="btn_wrap">
-              <button>
-                <img class="icon" src="../../../public/image/star.svg" alt="" />
-              </button>
-              <button>
-                <img class="icon" src="../../../public/image/star.svg" alt="" />
-              </button>
-              <button onclick="closeModal()">
-                <img class="icon" src="../../../public/image/star.svg" alt="" />
+                <img
+                  class="icon"
+                  src="../../../public/image/template_selected_code.svg"
+                  alt=""
+                />
+                <p>
+                  <span>선택한 서식명(서식코드) : </span>
+                  <span>(DOC0000001) (무배당) 상품약관</span>
+                </p>
+              </div>
+              <button class="search_btn">
+                <div class="icon"></div>
+                <span>검색</span>
+                <img
+                  class="icon"
+                  src="../../../public/image/btn_search.svg"
+                  alt=""
+                />
               </button>
             </div>
+            <div class="page_wrap">
+              <div class="left_area">
+                <p>
+                  <img
+                    class="icon"
+                    src="../../../public/image/doc_current_document.svg"
+                    alt=""
+                  />
+                  <span>해당 상품에 등록된 문서</span>
+                </p>
+                <div class="page">
+                  <span>000 건</span>
+                  <select class="select_s">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="right_area">
+                <button onclick="showModal('reg', '표준약관등록')">
+                  <img
+                    class="icon"
+                    src="../../../public/image/doc_register_document.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="../../../public/image/doc_register_document.svg"
+                    alt=""
+                  />
+                </button>
+                <button>
+                  <img
+                    class="icon"
+                    src="../../../public/image/doc_register_document.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="modal_content" data-modal="reg"></div>
-        </div>
+          <div class="main_table">
+            <table>
+              <colgroup>
+                <col style="width: 12%" />
+                <col style="width: 18%" />
+                <col style="width: 18%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 12%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_l">
+                      <span>서식코드</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_l">
+                      <span>문서명</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_l">
+                      <span>문서유형</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_c">
+                      <span>버전</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_c">
+                      <span>등록부서</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_c">
+                      <span>등록자</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_c">
+                      <span>등록일시</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_c">
+                      <span>최종변경일시</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active">
+                  <td>
+                    <p class="td_l">123</p>
+                  </td>
+                  <td>
+                    <p class="td_l">상품명</p>
+                  </td>
+                  <td>
+                    <p class="td_l">상품소분류</p>
+                  </td>
+                  <td>
+                    <p class="td_c">판매여부</p>
+                  </td>
+                  <td>
+                    <p class="td_c">등록부서</p>
+                  </td>
+                  <td>
+                    <p class="td_c">등록자</p>
+                  </td>
+                  <td>
+                    <p class="td_c">등록일시</p>
+                  </td>
+                  <td>
+                    <p class="td_c">최종변경일시</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="td_l">123</p>
+                  </td>
+                  <td>
+                    <p class="td_l">상품명</p>
+                  </td>
+                  <td>
+                    <p class="td_l">상품소분류</p>
+                  </td>
+                  <td>
+                    <p class="td_c">판매여부</p>
+                  </td>
+                  <td>
+                    <p class="td_c">등록부서</p>
+                  </td>
+                  <td>
+                    <p class="td_c">등록자</p>
+                  </td>
+                  <td>
+                    <p class="td_c">등록일시</p>
+                  </td>
+                  <td>
+                    <p class="td_c">최종변경일시</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </div>
-</body>
-
+    </main>
+    <div class="modal_bg">
+      <div class="modal_area">
+        <div class="modal_header">
+          <span class="modal_title"></span>
+          <div class="btn_wrap">
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/modal_hide_view.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/modal_enlarge_view.svg"
+                alt=""
+              />
+            </button>
+            <button onclick="closeModal()">
+              <img
+                class="icon"
+                src="../../../public/image/modal_close_view.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div class="modal_content" data-modal="reg"></div>
+      </div>
+    </div>
+  </body>
 </html>
