@@ -1,20 +1,44 @@
 .contrast_modal {
   display: flex;
   overflow: hidden;
-  width: 1100px;
+  width: 1200px;
   height: 680px;
 }
 
 .contrast_modal .index_content {
-  width: 300px;
+  width: 220px;
   height: 100%;
 }
 
-.contrast_modal .form_area {
-  width: calc(50% - 150px);
+.contrast_modal .index_content:first-child .search {
+  justify-content: flex-end;
 }
 
-.contrast_modal .form_area:nth-of-type(2) {
-  border-left: 1px solid var(--gray5);
+.contrast_modal .form_wrap {
+  width: calc(50% - 220px);
+}
+
+.contrast_modal .form_header {
+  height: 32px;
+  background-color: var(--navy1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.contrast_modal .form_header select {
+  width: 160px;
+  background-color: transparent;
+  height: 24px;
+  border-color: var(--line);
+  color: var(--white);
+}
+.contrast_modal .form_area {
+  height: calc(100% - 32px);
+}
+
+.contrast_modal > div:not(:last-child){
   border-right: 1px solid var(--gray5);
 }
+

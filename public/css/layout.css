@@ -712,6 +712,14 @@ table .table_sort span {
   border-bottom: 1px solid var(--gray5);
 }
 
+.index_content .toggle_wrap {
+  height: 30px ;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  border-bottom: 1px solid var(--gray5);
+}
+
 .index_content .btn_wrap > div {
   display: flex;
 }
