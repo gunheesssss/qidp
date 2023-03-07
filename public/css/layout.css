@@ -809,3 +809,22 @@ table .table_sort span {
 .icon_tit img {
   margin-right: 5px;
 }
+
+/* 라이브러리 */
+
+.ck-editor {
+  height: 100% !important;
+}
+
+.ck-editor__main {
+  height: calc(100% - 40px) !important;
+}
+
+.ck-content {
+  height: 100% !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.ck-toolbar {
+  border: none !important;
+}

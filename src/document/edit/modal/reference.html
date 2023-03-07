@@ -1,49 +1,5 @@
 <link rel="stylesheet" type="text/css" href="./modal/reference.css" />
 <div class="reference_modal">
-  <div class="accordion">
-    <div class="search">
-      <img class="icon" src="../../../public/image/search.svg" alt="" />
-      <input type="text" placeholder="오류메시지확인" />
-    </div>
-    <ul>
-      <li>
-        <p class="list_title">
-          (DOC00001) 무)건강보험(21.02)_보험료 및
-          <img
-            class="icon"
-            src="../../../public/image/doc_viewMore_down.svg"
-            alt=""
-          />
-        </p>
-        <div class="list_content active">
-          <span> 키워드 검색 내용 </span>
-        </div>
-      </li>
-      <li>
-        <p class="list_title">
-          (DOC00001) 무)건강보험(21.02)_보험료 및
-          <img
-            class="icon"
-            src="../../../public/image/doc_viewMore_right.svg"
-            alt=""
-          />
-        </p>
-        <div class="list_content"></div>
-      </li>
-      <li>
-        <p class="list_title">
-          (DOC00001) 무)건강보험(21.02)_보험료 및
-          <img
-            class="icon"
-            src="../../../public/image/doc_viewMore_right.svg"
-            alt=""
-          />
-        </p>
-        <div class="list_content"></div>
-      </li>
-    </ul>
-  </div>
-
   <div class="index_content">
     <div class="search">
       <img class="icon" src="../../../public/image/search.svg" alt="" />
@@ -51,8 +7,7 @@
       <button>
         <img
           class="icon"
-          src="../../../public/image/doc_move_left_view.svg
-"
+          src="../../../public/image/doc_move_left_view.svg"
           alt=""
         />
       </button>
@@ -135,5 +90,11 @@
     </div>
   </div>
 
-  <div class="form_area" style="background-color: #e1ffdb"></div>
+  <div class="form_area" style="background-color: #e1ffdb">
+    <div id="ref_editor">텍스트를 입력해주세요</div>
+  </div>
 </div>
+
+<script>
+  ClassicEditor.create(document.querySelector('#ref_editor'));
+</script>

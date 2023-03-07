@@ -1,9 +1,4 @@
 <link rel="stylesheet" type="text/css" href="./modal/contrast.css" />
-
-<!--테스트중  -->
-<script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
-<!--  -->
-
 <div class="contrast_modal">
   <div class="index_content">
     <div class="search">
@@ -111,9 +106,7 @@
       </button>
     </div>
     <div class="form_area">
-      <!--  -->
-      <div id="editor">텍스트를 입력해주세요</div>
-      <!--  -->
+      <div id="con_left_editor">텍스트를 입력해주세요</div>
     </div>
   </div>
   <div class="form_wrap">
@@ -126,7 +119,9 @@
         <img class="icon" src="../../../public/image/doc_lock.svg" alt="" />
       </button>
     </div>
-    <div class="form_area" style="background-color: #ffe7e7"></div>
+    <div class="form_area">
+      <div id="con_right_editor">텍스트를 입력해주세요</div>
+    </div>
   </div>
   <div class="index_content">
     <div class="search">
@@ -225,10 +220,8 @@
       </ul>
     </div>
   </div>
-
-  <!--  -->
-  <script>
-    ClassicEditor.create(document.querySelector('#editor'));
-  </script>
-  <!--  -->
 </div>
+<script>
+  ClassicEditor.create(document.querySelector('#con_left_editor'));
+  ClassicEditor.create(document.querySelector('#con_right_editor'));
+</script>
