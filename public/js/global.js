@@ -33,4 +33,12 @@ $(function () {
     $(".modal_bg").addClass("show");
     $(`[data-modal='${type}']`).addClass("show");
   };
+
+
+    // 파일 업로드
+    $(document).on("change", "[data-upload]", function (input) {
+      const file = input.target.files[0];
+      const uploadName = `[data-uploadname=${this.dataset.upload}]`;
+      $(uploadName).val(file.name);
+    });
 });

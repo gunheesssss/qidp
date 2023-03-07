@@ -1,0 +1,45 @@
+.reg_modal {
+    width: 500px;
+    padding: 10px;
+}
+
+.reg_modal .reg_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.reg_modal .reg_header .btn_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.reg_modal > * {
+    width: 100%;
+}
+.reg_modal > *:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.reg_modal .btn_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.toggle_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.toggle_wrap .check_toggle {
+    margin-left: 8px;
+}
+
+.reg_modal textarea {
+    height: 200px;
+}

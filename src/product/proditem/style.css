@@ -1,0 +1,23 @@
+section {
+    display: flex;
+}
+
+.type_wrap {
+    width: 200px;
+    padding-right: 10px;
+}
+
+.stack_table {
+    width: calc(100% - 200px);
+}
+
+.stack_table .main_table {
+    height: calc(100% - 40px);
+}
+
+.stack_table .search_header {
+    height: 32px;
+}
+.stack_table .ct_header select {
+    width: 90px;
+}

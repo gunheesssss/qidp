@@ -19,6 +19,7 @@
         $(document).ready(function () {
           $("header").load("../../../public/component/header.html");
           $("nav").load("../../../public/component/nav.html");
+          $("[data-modal='reg']").load('./modal/reg.html');
         });
       </script>
     <header>
@@ -91,7 +92,7 @@
                       </div>
                     </div>
                     <div class="right_area">
-                      <button>
+                      <button onclick="showModal('reg', '표준약관등록')">
                         <img
                           class="icon"
                           src="../../../public/image/doc_register_document.svg"
@@ -326,6 +327,25 @@
               </section>
         </div>
     </main>
+    <div class="modal_bg">
+        <div class="modal_area">
+          <div class="modal_header">
+            <span class="modal_title"></span>
+            <div class="btn_wrap">
+              <button>
+                <img class="icon" src="../../../public/image/star.svg" alt="" />
+              </button>
+              <button>
+                <img class="icon" src="../../../public/image/star.svg" alt="" />
+              </button>
+              <button onclick="closeModal()">
+                <img class="icon" src="../../../public/image/star.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="modal_content" data-modal="reg"></div>
+        </div>
+      </div>
 </body>
 
 </html>

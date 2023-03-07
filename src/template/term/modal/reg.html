@@ -1,0 +1,61 @@
+<link rel="stylesheet" type="text/css" href="./modal/reg.css">
+<form class="reg_modal">
+    <div class="reg_header">
+        <p class="icon_tit">
+            <img class="icon" src="../../../public/image/folder.svg" alt="">
+            <span>표준약관정보</span>
+        </p>
+        <div class="btn_wrap">
+            <button>
+                <img class="icon" src="../../../public/image/folder.svg" alt="">
+            </button>
+            <button>
+                <img class="icon" src="../../../public/image/folder.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="fields">
+        <select class="select_style" required>
+            <option value="" hidden selected>상품 분류 선택</option>
+            <option value="" >항목</option>
+        </select>
+        <select class="select_style" required>
+            <option value="" hidden selected>상품 중분류 선택</option>
+            <option value="" >항목</option>
+        </select>
+    </div>
+
+    <input type="text" class="input_style" placeholder="표준약관코드">
+    <input type="text" class="input_style" placeholder="표준약관명">
+    
+    <div class="fields">
+        <select class="select_style" required>
+            <option value="" hidden selected>약관유형 선택</option>
+            <option value="" >항목</option>
+        </select>
+        <div class="toggle_wrap">
+            <span>사용유무</span>
+            <label class="check_toggle">
+                <input type="checkbox" checked />
+                <div class="check_toggle_style"></div>
+                <span class="toggle_t">On</span>
+                <span class="toggle_f">Off</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="upload_box">
+        <input type="text" readonly class="upload_name" data-uploadname="term" placeholder="파일선택">
+        <label class="upload_btn">
+          <img class="icon" src="../../../public/image/folder.svg" alt="" />
+          <input type="file" data-upload="term" />
+        </label>
+      </div>
+
+    <div class="fields">
+        <input type="date" data-placeholder="약관개정일" required aria-required="true">
+    </div>
+
+    <textarea placeholder="주요 개정 내역"></textarea>
+</form>

@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="./modal/reg.css">
+<form class="reg_modal">
+    <div class="btn_wrap">
+        <button>
+            <img class="icon" src="../../../public/image/folder.svg" alt="">
+        </button>
+        <button>
+            <img class="icon" src="../../../public/image/folder.svg" alt="">
+        </button>
+    </div>
+
+    <input type="text" class="input_style" placeholder="분류명 (복사하기 인 경우, 기존 분류명 앞에 (Copy) 로 생성">
+    
+    <div class="fields">
+        <select class="select_style" required>
+            <option value="" hidden selected>분류구분 선택</option>
+            <option value="" >항목</option>
+        </select>
+        <div class="toggle_wrap">
+            <span>사용유무</span>
+            <label class="check_toggle">
+                <input type="checkbox" checked />
+                <div class="check_toggle_style"></div>
+                <span class="toggle_t">On</span>
+                <span class="toggle_f">Off</span>
+            </label>
+        </div>
+    </div>
+
+    <textarea placeholder="분류명"></textarea>
+</form>
