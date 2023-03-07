@@ -32,7 +32,7 @@
             </button>
           </li>
           <li>
-            <span>문서관리</span>
+            <span>문서작성/편집</span>
             <button>
               <img class="icon" src="../../../public/image/close.svg" alt="" />
             </button>
@@ -48,7 +48,10 @@
                     src="../../../public/image/search.svg"
                     alt=""
                   />
-                  <input type="text" placeholder="상품명/상품코드" />
+                  <input
+                    type="text"
+                    placeholder="상품명/상품코드/서식명/서식코드"
+                  />
                   <img
                     class="icon"
                     src="../../../public/image/template_input_code.svg"
@@ -61,8 +64,8 @@
                   alt=""
                 />
                 <p>
-                  <span>선택한 서식명(서식코드) : </span>
-                  <span>(DOC0000001) (무배당) 상품약관</span>
+                  <span>선택한 (상품코드) 상품명 : </span>
+                  <span>(PRD0000001) (무배당)</span>
                 </p>
               </div>
               <button class="search_btn">
@@ -108,6 +111,8 @@
             <table>
               <colgroup>
                 <col style="width: 12%" />
+                <col style="width: 12%" />
+                <col style="width: 12%" />
                 <col style="width: 18%" />
                 <col style="width: 18%" />
                 <col style="width: 10%" />
@@ -120,7 +125,7 @@
                 <tr>
                   <th class="table_sort" data-sort="">
                     <div class="td_l">
-                      <span>서식코드</span>
+                      <span>상품대분류</span>
                       <div class="sort_wrap">
                         <img
                           src="../../../public/image/sort_icon.svg"
@@ -136,8 +141,8 @@
                     </div>
                   </th>
                   <th class="table_sort" data-sort="">
-                    <div class="td_l">
-                      <span>문서명</span>
+                    <div class="td_c">
+                      <span>기초서류유형</span>
                       <div class="sort_wrap">
                         <img
                           src="../../../public/image/sort_icon.svg"
@@ -153,8 +158,42 @@
                     </div>
                   </th>
                   <th class="table_sort" data-sort="">
-                    <div class="td_l">
-                      <span>문서유형</span>
+                    <div class="td_c">
+                      <span>서식유형</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_c">
+                      <span>(서식코드)서식명</span>
+                      <div class="sort_wrap">
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon asc"
+                          alt=""
+                        />
+                        <img
+                          src="../../../public/image/sort_icon.svg"
+                          class="sort_icon desc"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="table_sort" data-sort="">
+                    <div class="td_c">
+                      <span>(문서번호)문서명</span>
                       <div class="sort_wrap">
                         <img
                           src="../../../public/image/sort_icon.svg"
@@ -259,16 +298,22 @@
               <tbody>
                 <tr class="active">
                   <td>
-                    <p class="td_l">123</p>
+                    <p class="td_l">상품대분류</p>
                   </td>
                   <td>
-                    <p class="td_l">상품명</p>
+                    <p class="td_c">기초서류유형</p>
                   </td>
                   <td>
-                    <p class="td_l">상품소분류</p>
+                    <p class="td_c">서식유형</p>
                   </td>
                   <td>
-                    <p class="td_c">판매여부</p>
+                    <p class="td_c">서식명</p>
+                  </td>
+                  <td>
+                    <p class="td_c">문서명</p>
+                  </td>
+                  <td>
+                    <p class="td_c">버전</p>
                   </td>
                   <td>
                     <p class="td_c">등록부서</p>
@@ -285,16 +330,22 @@
                 </tr>
                 <tr>
                   <td>
-                    <p class="td_l">123</p>
+                    <p class="td_l">상품대분류</p>
                   </td>
                   <td>
-                    <p class="td_l">상품명</p>
+                    <p class="td_c">기초서류유형</p>
                   </td>
                   <td>
-                    <p class="td_l">상품소분류</p>
+                    <p class="td_c">서식유형</p>
                   </td>
                   <td>
-                    <p class="td_c">판매여부</p>
+                    <p class="td_c">서식명</p>
+                  </td>
+                  <td>
+                    <p class="td_c">문서명</p>
+                  </td>
+                  <td>
+                    <p class="td_c">버전</p>
                   </td>
                   <td>
                     <p class="td_c">등록부서</p>
