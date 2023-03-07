@@ -783,6 +783,11 @@ table .table_sort span {
   border-bottom: 1px solid var(--gray5);
 }
 
+.accordion .list_title .icon {
+  width: 10px;
+  height: 10px;
+}
+
 .accordion .list_content {
   display: none;
   border-bottom: 1px solid var(--gray5);
