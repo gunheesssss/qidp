@@ -783,6 +783,15 @@ table .table_sort span {
   border-bottom: 1px solid var(--gray5);
 }
 
+.accordion .list_title.active + .list_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accordion .list_title.active .icon {
+  transform: rotate(90deg);
+}
+
 .accordion .list_title .icon {
   width: 10px;
   height: 10px;
@@ -793,11 +802,6 @@ table .table_sort span {
   border-bottom: 1px solid var(--gray5);
   padding: 5px;
   align-items: center;
-}
-
-.accordion .list_content.active {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .accordion .list_content span {

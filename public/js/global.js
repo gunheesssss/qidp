@@ -41,4 +41,12 @@ $(function () {
       const uploadName = `[data-uploadname=${this.dataset.upload}]`;
       $(uploadName).val(file.name);
     });
+
+    //아코디언
+    $(".accordion .list_title").click(function () {
+      $(".accordion .list_title").removeClass("active");
+      $(this).addClass("active");
+    });
+
+
 });
