@@ -1,173 +1,223 @@
-<link rel="stylesheet" type="text/css" href="./modal/reg.css">
+<link rel="stylesheet" type="text/css" href="./modal/reg.css" />
 <div class="reg_modal">
-    <div class="reg_form">
-        <div class="reg_header">
-            <select class="select_style" required>
-                <option value="" hidden selected>선택(등록된) 상품항목</option>
-                <option value="" >항목</option>
-            </select>
-        </div>
-        <div class="form_content">
-            <input type="text" class="input_style" placeholder="AB00001">
-            <input type="text" class="input_style" placeholder="상품명">
-        
-            <div class="fields">
-                <input type="date" data-placeholder="판매시작일자" required aria-required="true">
-                <input type="date" data-placeholder="판매종료일자" required aria-required="true">
-            </div>
-    
-            <div class="fields">
-                <select class="select_style" required>
-                    <option value="" hidden selected>상품유형</option>
-                    <option value="" >항목</option>
-                </select>
-                <select class="select_style" required>
-                    <option value="" hidden selected>보장유형</option>
-                    <option value="" >항목</option>
-                </select>
-            </div>
-            
-            <div class="fields">
-                <div></div>
-                <div class="toggle_wrap">
-                    <span>판매유무</span>
-                    <label class="check_toggle">
-                        <input type="checkbox" checked />
-                        <div class="check_toggle_style"></div>
-                        <span class="toggle_t">On</span>
-                        <span class="toggle_f">Off</span>
-                    </label>
-                </div>
-            </div>
-    
-            <textarea placeholder="상품설명"></textarea>
-            <ul>
-                <li>
-                    <input type="text" class="input_style" placeholder="보장기간">
-                </li>
-                <li>
-                    <input type="text" class="input_style" placeholder="기타 사용자 추가 항목 display">
-                </li>
-            </ul>
-        </div>
+  <div class="reg_form">
+    <div class="reg_header">
+      <select class="select_style" required>
+        <option value="" hidden selected>선택(등록된) 상품항목</option>
+        <option value="">항목</option>
+      </select>
     </div>
-    
-    
-    <div class="sp_area">
-        <div class="reg_header">
-            <p class="icon_tit">
-                <img class="icon" src="../../../public/image/folder.svg" alt="">
-                <span>등록자 : 최성연 (2020-09-15 : 16:04)</span>
-            </p>
-        </div>
-        <div class="sp_content">
-            <div class="slide">
-                <button>
-                    <img class="icon" src="../../../public/image/folder.svg" alt="">
-                </button>
-                <span>
-                    List 항목 Slide pop-up
-                </span>
-                <div class="icon" >
+    <div class="form_content">
+      <input type="text" class="input_style" placeholder="AB00001" />
+      <input type="text" class="input_style" placeholder="상품명" />
 
-                </div>
-            </div>
-            <div class="table">
-                <table>
-                    <colgroup>
-                        <col style="width: 100%;">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th class="table_sort td_c">
-                                <div class="td_c">
-                                    <span>(특약코드) 특약명</span>
-                                    <div class="sort_wrap" data-sort="">
-                                        <img src="../../../public/image/sort_icon.svg" class="sort_icon asc" alt="" />
-                                        <img src="../../../public/image/sort_icon.svg" class="sort_icon desc" alt="" />
-                                    </div>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="active">
-                            <td class="td_c">
-                                <span>123</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td_c">
-                                <span>123</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="fields">
+        <input
+          type="date"
+          data-placeholder="판매시작일자"
+          required
+          aria-required="true"
+        />
+        <input
+          type="date"
+          data-placeholder="판매종료일자"
+          required
+          aria-required="true"
+        />
+      </div>
+
+      <div class="fields">
+        <select class="select_style" required>
+          <option value="" hidden selected>상품유형</option>
+          <option value="">항목</option>
+        </select>
+        <select class="select_style" required>
+          <option value="" hidden selected>보장유형</option>
+          <option value="">항목</option>
+        </select>
+      </div>
+
+      <div class="fields">
+        <div></div>
+        <div class="toggle_wrap">
+          <span>판매유무</span>
+          <label class="check_toggle">
+            <input type="checkbox" checked />
+            <div class="check_toggle_style"></div>
+            <span class="toggle_t">On</span>
+            <span class="toggle_f">Off</span>
+          </label>
         </div>
+      </div>
+
+      <textarea placeholder="상품설명"></textarea>
+      <ul>
+        <li>
+          <input type="text" class="input_style" placeholder="보장기간" />
+        </li>
+        <li>
+          <input
+            type="text"
+            class="input_style"
+            placeholder="기타 사용자 추가 항목 display"
+          />
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <div class="file_area">
-        <div class="reg_header">
-            <p class="icon_tit">
-                <img class="icon" src="../../../public/image/folder.svg" alt="">
-                <span>등록된 기초서류 00 종 (최신버전 only)</span>
-            </p>
-            <div class="btn_wrap">
-                <button>
-                    <img class="icon" src="../../../public/image/folder.svg" alt="">
-                </button>
-                <button>
-                    <img class="icon" src="../../../public/image/folder.svg" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="file_content">
-            <div class="wrap">
-                <div class="upload_box file_header">
-                    <input type="text" readonly class="upload_name" data-uploadname="term" placeholder="파일선택">
-                    <label class="upload_btn">
-                      <img class="icon" src="../../../public/image/folder.svg" alt="" />
-                      <input type="file" data-upload="term" />
-                    </label>
-                </div>
-                <ul>
-                    <li class="active">테스트</li>
-                    <li>테스트</li>
-                    <li>테스트</li>
-                </ul>
-            </div>
-            <div class="arrow_wrap">
-                <button>
-                    <img class="icon" src="../../../public/image/folder.svg" alt="">
-                </button>
-                <button>
-                    <img class="icon" src="../../../public/image/folder.svg" alt="">
-                </button>
-            </div>
-            <div class="wrap">
-                <div class="file_header search">
+  <div class="sp_area">
+    <div class="reg_header">
+      <p class="icon_tit">
+        <img
+          class="icon"
+          src="../../../public/image/doc_current_document.svg"
+          alt=""
+        />
+        <span>등록자 : 최성연 (2020-09-15 : 16:04)</span>
+      </p>
+    </div>
+    <div class="sp_content">
+      <div class="slide">
+        <button>
+          <img
+            class="icon"
+            src="../../../public/image/doc_viewMore_right.svg"
+            alt=""
+          />
+        </button>
+        <span> List 항목 Slide pop-up </span>
+        <div class="icon"></div>
+      </div>
+      <div class="table">
+        <table>
+          <colgroup>
+            <col style="width: 100%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="table_sort td_c">
+                <div class="td_c">
+                  <span>(특약코드) 특약명</span>
+                  <div class="sort_wrap" data-sort="">
                     <img
-                        class="icon"
-                        src="../../../public/image/search.svg"
-                        alt=""
+                      src="../../../public/image/sort_icon.svg"
+                      class="sort_icon asc"
+                      alt=""
                     />
-                    <input type="text" placeholder="문서검색" />
-                    <button>
-                        <img
-                            class="icon"
-                            src="../../../public/image/template_input_code.svg"
-                            alt=""
-                        />
-                    </button>
+                    <img
+                      src="../../../public/image/sort_icon.svg"
+                      class="sort_icon desc"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <ul>
-                    <li class="active">테스트</li>
-                    <li>테스트</li>
-                    <li>테스트</li>
-                </ul>
-            </div>
-        </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="active">
+              <td class="td_c">
+                <span>123</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="td_c">
+                <span>123</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+  </div>
 
+  <div class="file_area">
+    <div class="reg_header">
+      <p class="icon_tit">
+        <img
+          class="icon"
+          src="../../../public/image/doc_current_document.svg"
+          alt=""
+        />
+        <span>등록된 기초서류 00 종 (최신버전 only)</span>
+      </p>
+      <div class="btn_wrap">
+        <button>
+          <img
+            class="icon"
+            src="../../../public/image/doc_save_subject.svg"
+            alt=""
+          />
+        </button>
+        <button>
+          <img
+            class="icon"
+            src="../../../public/image/doc_undefined_refresh.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+    <div class="file_content">
+      <div class="wrap">
+        <div class="upload_box file_header">
+          <input
+            type="text"
+            readonly
+            class="upload_name"
+            data-uploadname="term"
+            placeholder="파일선택"
+          />
+          <label class="upload_btn">
+            <img
+              class="icon"
+              src="../../../public/image/file_share.svg"
+              alt=""
+            />
+            <input type="file" data-upload="term" />
+          </label>
+        </div>
+        <ul>
+          <li class="active">테스트</li>
+          <li>테스트</li>
+          <li>테스트</li>
+        </ul>
+      </div>
+      <div class="arrow_wrap">
+        <button>
+          <img
+            class="icon"
+            src="../../../public/image/doc_moveDown_subject.svg"
+            alt=""
+          />
+        </button>
+        <button>
+          <img
+            class="icon"
+            src="../../../public/image/doc_moveUp_subject.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="wrap">
+        <div class="file_header search">
+          <img class="icon" src="../../../public/image/search.svg" alt="" />
+          <input type="text" placeholder="문서검색" />
+          <button>
+            <img
+              class="icon"
+              src="../../../public/image/template_input_code.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <ul>
+          <li class="active">테스트</li>
+          <li>테스트</li>
+          <li>테스트</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
