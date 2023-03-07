@@ -1,0 +1,6 @@
+
+.toggle_wrap,
+.section_header .btn_wrap {
+    display: flex;
+    gap: 5px;
+}
