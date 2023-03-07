@@ -655,6 +655,11 @@ table .table_sort span {
 
 /* 검색영역 */
 
+.search > .icon {
+  width: 18px;
+  height: 18px;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -678,8 +683,11 @@ table .table_sort span {
   background-color: var(--blue);
   color: var(--white);
   height: 32px;
-  width: 90px;
+  min-width: 90px;
   border-radius: 3px;
+  padding: 0 5px;
+}
+.search_btn span{
   padding: 0 5px;
 }
 .search_btn .icon {
