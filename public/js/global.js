@@ -44,6 +44,8 @@ $(function () {
 
     //아코디언
     $(".accordion .list_title").click(function () {
+      if($(this).hasClass('active')) return $(".accordion .list_title").removeClass("active");
+      
       $(".accordion .list_title").removeClass("active");
       $(this).addClass("active");
     });
