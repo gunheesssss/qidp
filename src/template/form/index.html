@@ -17,8 +17,7 @@
       $(document).ready(function () {
         $('header').load('../../../public/component/header.html');
         $('nav').load('../../../public/component/nav.html');
-        $("[data-modal='reg']").load("./modal/reg.html");
-
+        $("[data-modal='reg']").load('./modal/reg.html');
       });
     </script>
     <header></header>
@@ -43,7 +42,7 @@
                     src="../../../public/image/search.svg"
                     alt=""
                   />
-                  <input type="text" placeholder="상품명/상품코드" />
+                  <input type="text" placeholder="서식명/서식코드" />
                   <img
                     class="icon"
                     src="../../../public/image/template_input_code.svg"
@@ -145,8 +144,8 @@
                     </div>
                   </th>
                   <th class="table_sort" data-sort="">
-                    <div class="td_l">
-                      <span>문서명</span>
+                    <div class="td_c">
+                      <span>서식명</span>
                       <div class="sort_wrap">
                         <img
                           src="../../../public/image/sort_icon.svg"
@@ -162,8 +161,8 @@
                     </div>
                   </th>
                   <th class="table_sort" data-sort="">
-                    <div class="td_l">
-                      <span>문서유형</span>
+                    <div class="td_c">
+                      <span>서식유형</span>
                       <div class="sort_wrap">
                         <img
                           src="../../../public/image/sort_icon.svg"
@@ -271,10 +270,10 @@
                     <p class="td_l">123</p>
                   </td>
                   <td>
-                    <p class="td_l">상품명</p>
+                    <p class="td_c">상품명</p>
                   </td>
                   <td>
-                    <p class="td_l">상품소분류</p>
+                    <p class="td_c">상품소분류</p>
                   </td>
                   <td>
                     <p class="td_c">판매여부</p>
@@ -297,10 +296,10 @@
                     <p class="td_l">123</p>
                   </td>
                   <td>
-                    <p class="td_l">상품명</p>
+                    <p class="td_c">상품명</p>
                   </td>
                   <td>
-                    <p class="td_l">상품소분류</p>
+                    <p class="td_c">상품소분류</p>
                   </td>
                   <td>
                     <p class="td_c">판매여부</p>
@@ -326,22 +325,34 @@
     </main>
     <div class="modal_bg">
       <div class="modal_area">
-          <div class="modal_header">
-              <span class="modal_title"></span>
-              <div class="btn_wrap">
-                  <button>
-                      <img class="icon" src="../../../public/image/star.svg" alt="">
-                  </button>
-                  <button>
-                      <img class="icon" src="../../../public/image/star.svg" alt="">
-                  </button>
-                  <button onclick="closeModal()">
-                      <img class="icon" src="../../../public/image/star.svg" alt="">
-                  </button>
-              </div>
+        <div class="modal_header">
+          <span class="modal_title"></span>
+          <div class="btn_wrap">
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/modal_hide_view.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/modal_enlarge_view.svg"
+                alt=""
+              />
+            </button>
+            <button onclick="closeModal()">
+              <img
+                class="icon"
+                src="../../../public/image/modal_close_view.svg"
+                alt=""
+              />
+            </button>
           </div>
-          <div class="modal_content" data-modal="reg"></div>
+        </div>
+        <div class="modal_content" data-modal="reg"></div>
       </div>
-  </div>
+    </div>
   </body>
 </html>

@@ -1,153 +1,193 @@
-<link rel="stylesheet" type="text/css" href="./modal/reg.css">
+<link rel="stylesheet" type="text/css" href="./modal/reg.css" />
 <div class="reg_modal">
-    <div class="reg_header">
-        <p class="icon_tit">
-            <img class="icon" src="../../../public/image/folder.svg" alt="">
-            <span>서식 기초정보</span>
-        </p>
-        <div class="btn_wrap">
-            <button>
-                <img class="icon" src="../../../public/image/folder.svg" alt="">
-            </button>
-            <button>
-                <img class="icon" src="../../../public/image/folder.svg" alt="">
-            </button>
-        </div>
+  <div class="reg_header">
+    <p class="icon_tit">
+      <img
+        class="icon"
+        src="../../../public/image/doc_current_document.svg"
+        alt=""
+      />
+      <span>서식 기초정보</span>
+    </p>
+    <div class="btn_wrap">
+      <button>
+        <img
+          class="icon"
+          src="../../../public/image/doc_save_subject.svg"
+          alt=""
+        />
+      </button>
+      <button>
+        <img
+          class="icon"
+          src="../../../public/image/doc_undefined_refresh.svg"
+          alt=""
+        />
+      </button>
     </div>
-    <div class="wrap">
-        <div class="form_wrap">
-            <div class="fields">
-                <select class="select_style" required>
-                    <option value="" hidden selected>상품 분류 선택</option>
-                    <option value="" >항목</option>
-                </select>
-                <select class="select_style" required>
-                    <option value="" hidden selected>상품 중분류 선택</option>
-                    <option value="" >항목</option>
-                </select>
-            </div>
-            <input type="text" class="input_style" placeholder="서식코드">
-            <input type="text" class="input_style" placeholder="서식명">
-            <div class="fields">
-                <select class="select_style" required>
-                    <option value="" hidden selected>서식 유형 선택</option>
-                    <option value="" >항목</option>
-                </select>
-                <div class="toggle_wrap">
-                    <span>사용유무</span>
-                    <label class="check_toggle">
-                        <input type="checkbox" checked />
-                        <div class="check_toggle_style"></div>
-                        <span class="toggle_t">On</span>
-                        <span class="toggle_f">Off</span>
-                    </label>
-                </div>
-            </div>
-            <div class="fields">
-                <label class="radio_label">
-                    <input type="radio" name="formReg" value="신규등록" />
-                    <div class="radio_style"></div>
-                    <span>신규등록</span>
-                </label>
-                <label class="radio_label">
-                    <input type="radio" name="formReg" value="파일업로드" />
-                    <div class="radio_style"></div>
-                    <span>파일업로드</span>
-                </label>
-            </div>
-            <div class="type_wrap">
-                <div class="type_header">
-                    <select class="select_style" required>
-                        <option value="" hidden selected>목차 선택</option>
-                        <option value="" >항목</option>
-                    </select>
-                    <button>
-                        <img class="icon" src="../../../public/image/folder.svg" alt="">
-                    </button>                        
-                    <button>
-                        <img class="icon" src="../../../public/image/folder.svg" alt="">
-                    </button>                        
-                </div>
-                <ul>
-                    <li>상품설명서</li>
-                    <li>상품요약서</li>
-                    <li class="active">상품약관</li>
-                    <li>요율산정서</li>
-                </ul>
-            </div>
+  </div>
+  <div class="wrap">
+    <div class="form_wrap">
+      <div class="fields">
+        <select class="select_style" required>
+          <option value="" hidden selected>상품 분류 선택</option>
+          <option value="">항목</option>
+        </select>
+        <select class="select_style" required>
+          <option value="" hidden selected>상품 중분류 선택</option>
+          <option value="">항목</option>
+        </select>
+      </div>
+      <input type="text" class="input_style" placeholder="서식코드" />
+      <input type="text" class="input_style" placeholder="서식명" />
+      <div class="fields">
+        <select class="select_style" required>
+          <option value="" hidden selected>서식 유형 선택</option>
+          <option value="">항목</option>
+        </select>
+        <div class="toggle_wrap">
+          <span>사용유무</span>
+          <label class="check_toggle">
+            <input type="checkbox" checked />
+            <div class="check_toggle_style"></div>
+            <span class="toggle_t">On</span>
+            <span class="toggle_f">Off</span>
+          </label>
         </div>
-        <div class="index_wrap">
-            <div class="index_content">
-                <div class="btn_wrap">
-                  <div class="left_area">
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_add_subject.svg"
-                        alt=""
-                      />
-                    </button>
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_moveDown_subject.svg"
-                        alt=""
-                      />
-                    </button>
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_moveUp_subject.svg"
-                        alt=""
-                      />
-                    </button>
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_moveLeft_subject.svg"
-                        alt=""
-                      />
-                    </button>
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_moveRight_subject.svg"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                  <div class="right_area">
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_undefined_refresh.svg"
-                        alt=""
-                      />
-                    </button>
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_create_subject.svg"
-                        alt=""
-                      />
-                    </button>
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_save_subject.svg"
-                        alt=""
-                      />
-                    </button>
-                    <button>
-                      <img
-                        class="icon"
-                        src="../../../public/image/doc_drop_subject.svg"
-                        alt=""
-                      />
-                    </button>
-                  </div>
-                </div>
-                <div class="list_wrap">
+      </div>
+      <div class="fields">
+        <label class="radio_label">
+          <input type="radio" name="formReg" value="신규등록" />
+          <div class="radio_style"></div>
+          <span>신규등록</span>
+        </label>
+        <label class="radio_label">
+          <input type="radio" name="formReg" value="파일업로드" />
+          <div class="radio_style"></div>
+          <span>파일업로드</span>
+        </label>
+      </div>
+      <div class="type_wrap">
+        <div class="type_header">
+          <select class="select_style" required>
+            <option value="" hidden selected>목차 선택</option>
+            <option value="">항목</option>
+          </select>
+          <button>
+            <img
+              class="icon"
+              src="../../../public/image/doc_save_subject.svg"
+              alt=""
+            />
+          </button>
+          <button>
+            <img
+              class="icon"
+              src="../../../public/image/doc_drop_subject.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <ul>
+          <li>상품설명서</li>
+          <li>상품요약서</li>
+          <li class="active">상품약관</li>
+          <li>요율산정서</li>
+        </ul>
+      </div>
+    </div>
+    <div class="index_wrap">
+      <div class="index_content">
+        <div class="btn_wrap">
+          <div class="left_area">
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_add_subject.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_moveDown_subject.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_moveUp_subject.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_moveLeft_subject.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_moveRight_subject.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="right_area">
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_undefined_refresh.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_create_subject.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_save_subject.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="icon"
+                src="../../../public/image/doc_drop_subject.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div class="list_wrap">
+          <ul>
+            <li>
+              <p class="list_title">
+                <img
+                  class="icon"
+                  src="../../../public/image/folder.svg"
+                  alt=""
+                />
+                <span>Level 0 목차 1</span>
+              </p>
+              <ul>
+                <li>
+                  <p class="list_title">
+                    <img
+                      class="icon"
+                      src="../../../public/image/folder.svg"
+                      alt=""
+                    />
+                    <span>Level 0 목차 1</span>
+                  </p>
                   <ul>
                     <li>
                       <p class="list_title">
@@ -158,76 +198,56 @@
                         />
                         <span>Level 0 목차 1</span>
                       </p>
-                      <ul>
-                        <li>
-                          <p class="list_title">
-                            <img
-                              class="icon"
-                              src="../../../public/image/folder.svg"
-                              alt=""
-                            />
-                            <span>Level 0 목차 1</span>
-                          </p>
-                          <ul>
-                            <li>
-                              <p class="list_title">
-                                <img
-                                  class="icon"
-                                  src="../../../public/image/folder.svg"
-                                  alt=""
-                                />
-                                <span>Level 0 목차 1</span>
-                              </p>
-                            </li>
-                            <li>
-                              <p class="list_title">
-                                <img
-                                  class="icon"
-                                  src="../../../public/image/folder.svg"
-                                  alt=""
-                                />
-                                <span>Level 0 목차 1</span>
-                              </p>
-                            </li>
-                            <li>
-                              <p class="list_title">
-                                <img
-                                  class="icon"
-                                  src="../../../public/image/folder.svg"
-                                  alt=""
-                                />
-                                <span>Level 0 목차 1</span>
-                              </p>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p class="list_title">
-                            <img
-                              class="icon"
-                              src="../../../public/image/folder.svg"
-                              alt=""
-                            />
-                            <span>Level 0 목차 1</span>
-                          </p>
-                          <ul>
-                            <li>
-                              <p class="list_title">
-                                <img
-                                  class="icon"
-                                  src="../../../public/image/folder.svg"
-                                  alt=""
-                                />
-                                <span>Level 0 목차 1</span>
-                              </p>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+                    </li>
+                    <li>
+                      <p class="list_title">
+                        <img
+                          class="icon"
+                          src="../../../public/image/folder.svg"
+                          alt=""
+                        />
+                        <span>Level 0 목차 1</span>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="list_title">
+                        <img
+                          class="icon"
+                          src="../../../public/image/folder.svg"
+                          alt=""
+                        />
+                        <span>Level 0 목차 1</span>
+                      </p>
                     </li>
                   </ul>
-                </div>
-              </div>
+                </li>
+                <li>
+                  <p class="list_title">
+                    <img
+                      class="icon"
+                      src="../../../public/image/folder.svg"
+                      alt=""
+                    />
+                    <span>Level 0 목차 1</span>
+                  </p>
+                  <ul>
+                    <li>
+                      <p class="list_title">
+                        <img
+                          class="icon"
+                          src="../../../public/image/folder.svg"
+                          alt=""
+                        />
+                        <span>Level 0 목차 1</span>
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
+  </div>
 </div>
