@@ -101,7 +101,7 @@ $(function () {
 
     function addMenu(mainData) {
         const subMenu = menu[mainData].subMenu.map(v => `
-            <li onclick="location.href='/src/${mainData}/${v.value}/index.html'" data-subnav="${v.value}">
+            <li onclick="onClickSubNav('${mainData}', '${v.value}')" data-subnav="${v.value}">
                 <img class="icon" src="../../../public/image/nav_${v.value}.svg" alt="">
                 <span>${v.name}</span>
             </li>
@@ -111,5 +111,12 @@ $(function () {
         $("#sub_menu").html(subMenu.join(' '))
     }
 
+
 });
   
+function onClickSubNav(mainData, value){
+    console.log(["bloc", "verify"].includes(value));
+    if(["bloc", "verify"].includes(value)) return alert("개발 중인 페이지입니다.");
+
+    location.href=`/src/${mainData}/${value}/index.html`;
+}
