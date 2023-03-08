@@ -645,20 +645,8 @@ table .table_sort span {
   justify-content: space-between;
   margin-bottom: 8px;
 }
-.stack_table .search_header p {
-  display: flex;
-  align-items: center;
-}
-.stack_table .search_header p img {
-  margin-right: 5px;
-}
 
 /* 검색영역 */
-
-.search > .icon {
-  width: 18px;
-  height: 18px;
-}
 
 .search {
   display: flex;
@@ -833,13 +821,17 @@ table .table_sort span {
 
 /* desc */
 
-.icon_tit {
+.em_desc {
   display: flex;
   align-items: center;
 }
-
-.icon_tit img {
-  margin-right: 5px;
+.em_desc::before {
+ content: "";
+ width: 5px;
+ height: 5px;
+ background-color: var(--black);
+ margin-right: 6px;
+ margin-top: 1.5px;
 }
 
 /* 라이브러리 */

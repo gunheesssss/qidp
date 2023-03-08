@@ -12,14 +12,9 @@ section .index_wrap {
 } 
 
 section .index_header {
-    display: flex;
-    align-items: center;
     height: 32px;
     margin-bottom: 8px;
-}
-
-section .index_header img {
-    margin-right: 5px;
+    padding: 0 5px;
 }
 
 section .index_content {

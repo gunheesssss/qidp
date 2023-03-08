@@ -26,16 +26,13 @@ section {
   .search_wrap .search,
   .page_wrap > .left_area {
     width: 380px;
+    padding-left: 5px;
   }
 
   .page_wrap .right_area {
     gap: 10px;
   }
-  
-  .page_wrap p img {
-    margin-right: 5px;
-  }
-  
+
   .search_wrap .search {
     height: 32px;
     border: 1px solid var(--gray5);
@@ -50,9 +47,12 @@ section {
     padding: 0 5px;
     font-size: var(--fs-xs);
   }
-  
-  .search_wrap .left_area p {
-    margin-left: 5px;
+  .search_desc {
+    display: flex;
+    align-items: center;
+  }
+  .search_desc img {
+    margin-right: 5px;
   }
   
   .page select {
