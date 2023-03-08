@@ -114,19 +114,6 @@ $(function () {
     }
 
     function addMenu(mainData) {
-
-
-        // //<----
-        // // mainData: 클릭한 그것this의 dataset 값(예:template)
-        // const topMenuWithIcon = menu[mainData].map((topMenu)=> `<h1>
-        //     <img class="icon color_i" src="../../../public/image/${topMenu.icon}.svg" alt="">
-        //     <span id="menu_title">${topMenu.name}</span>
-        // </h1> ` )
-
-        // $(".sub_menu > .title").html(topMenuWithIcon)
-        // //---->
-
-
         const subMenu = menu[mainData].subMenu.map(v => `
             <li onclick="onClickSubNav('${mainData}', '${v.value}')" data-subnav="${v.value}">
                 <img class="icon color_i" src="../../../public/image/nav_${v.icon}.svg" alt="">
@@ -134,6 +121,7 @@ $(function () {
             </li>
         `)
 
+        $("#menu_icon").attr("src", `../../../public/image/${menu[mainData].icon}.svg`);
         $("#menu_title").text(menu[mainData].name)
         $("#sub_menu").html(subMenu.join(' '))
     }
