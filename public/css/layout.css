@@ -37,7 +37,7 @@ header .left_area select {
   width: 180px;
   color: var(--white);
   cursor: pointer;
-  padding: 0 5px;
+  padding: 0 16px 0 5px;
   text-align: center;
 }
 
