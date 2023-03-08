@@ -33,6 +33,7 @@ header .left_area select {
   color: var(--white);
   cursor: pointer;
   padding: 0 5px;
+  text-align: center;
 }
 
 header .right_area {
