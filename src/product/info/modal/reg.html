@@ -36,7 +36,7 @@
           <option value="">항목</option>
         </select>
       </div>
-
+      <textarea placeholder="상품설명"></textarea>
       <div class="fields">
         <div></div>
         <div class="toggle_wrap">
@@ -50,17 +50,12 @@
         </div>
       </div>
 
-      <textarea placeholder="상품설명"></textarea>
-      <ul>
+      <ul class="list">
         <li>
-          <input type="text" class="input_style" placeholder="보장기간" />
+          보장기간
         </li>
         <li>
-          <input
-            type="text"
-            class="input_style"
-            placeholder="기타 사용자 추가 항목 display"
-          />
+          기타 사용자 추가 항목 display
         </li>
       </ul>
     </div>
@@ -77,18 +72,6 @@
         <span>등록자 : 최성연 (2020-09-15 : 16:04)</span>
       </p>
     </div>
-    <div class="sp_content">
-      <div class="slide">
-        <button>
-          <img
-            class="icon"
-            src="../../../public/image/doc_viewMore_right.svg"
-            alt=""
-          />
-        </button>
-        <span> List 항목 Slide pop-up </span>
-        <div class="icon"></div>
-      </div>
       <div class="table">
         <table>
           <colgroup>
@@ -96,21 +79,9 @@
           </colgroup>
           <thead>
             <tr>
-              <th class="table_sort td_c">
+              <th class="td_c">
                 <div class="td_c">
                   <span>(특약코드) 특약명</span>
-                  <div class="sort_wrap" data-sort="">
-                    <img
-                      src="../../../public/image/sort_icon.svg"
-                      class="sort_icon asc"
-                      alt=""
-                    />
-                    <img
-                      src="../../../public/image/sort_icon.svg"
-                      class="sort_icon desc"
-                      alt=""
-                    />
-                  </div>
                 </div>
               </th>
             </tr>
@@ -129,7 +100,6 @@
           </tbody>
         </table>
       </div>
-    </div>
   </div>
 
   <div class="file_area">
@@ -178,7 +148,7 @@
             <input type="file" data-upload="term" />
           </label>
         </div>
-        <ul>
+        <ul class="list">
           <li class="active">테스트</li>
           <li>테스트</li>
           <li>테스트</li>
@@ -212,7 +182,7 @@
             />
           </button>
         </div>
-        <ul>
+        <ul class="list">
           <li class="active">테스트</li>
           <li>테스트</li>
           <li>테스트</li>
