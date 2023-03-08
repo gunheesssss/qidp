@@ -5,23 +5,28 @@ $(function () {
             subMenu: [
                 {
                     name: "항목관리",
-                    value : "item"
+                    value : "item",
+                    icon: ""
                 },
                 {
                     name: "검증항목관리",
-                    value : "verify"
+                    value : "verify",
+                    icon: ""
                 },
                 {
                     name: "목차관리",
-                    value : "table"
+                    value : "table",
+                    icon: ""
                 },
                 {
                     name: "서식관리",
-                    value : "form"
+                    value : "form",
+                    icon: ""
                 },
                 {
                     name: "표준약관관리",
-                    value : "term"
+                    value : "term",
+                    icon: ""
                 },
           
             ]
@@ -31,15 +36,18 @@ $(function () {
             subMenu: [
                 {
                     name: "상품항목관리",
-                    value : "proditem"
+                    value : "proditem",
+                    icon: ""
                 },
                 {
                     name: "상품분류관리",
-                    value : "class"
+                    value : "class",
+                    icon: ""
                 },
                 {
                     name: "상품정보관리",
-                    value : "info"
+                    value : "info",
+                    icon: ""
                 },
 
             ]
@@ -49,15 +57,18 @@ $(function () {
             subMenu: [
                 {
                     name: "문서관리",
-                    value : "manage"
+                    value : "manage",
+                    icon: ""
                 },
                 {
                     name: "문서작성/편집",
-                    value : "edit"
+                    value : "edit",
+                    icon: ""
                 },
                 {
                     name: "문서일괄편집",
-                    value : "bloc"
+                    value : "bloc",
+                    icon: ""
                 },
             ]
         },
@@ -102,7 +113,7 @@ $(function () {
     function addMenu(mainData) {
         const subMenu = menu[mainData].subMenu.map(v => `
             <li onclick="onClickSubNav('${mainData}', '${v.value}')" data-subnav="${v.value}">
-                <img class="icon color_i" src="../../../public/image/nav_${v.value}.svg" alt="">
+                <img class="icon color_i" src="../../../public/image/nav_${v.icon}.svg" alt="">
                 <span>${v.name}</span>
             </li>
         `)
