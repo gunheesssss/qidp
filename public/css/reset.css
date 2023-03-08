@@ -338,7 +338,7 @@ select:required:invalid {
   width: 8px;
   height: 8px;
   border-radius: 4px;
-  background-color: var(--gray5);
+  background-color: var(--blue);
   display: none;
 }
 

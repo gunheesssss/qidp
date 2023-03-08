@@ -1,4 +1,5 @@
 $(function () {
+
   //정렬기능
   $("[data-sort]").click(function () {
 
@@ -52,3 +53,9 @@ $(function () {
 
 
 });
+
+function onChangeMode(e) {
+  const mode = e.target.value;
+  const name = e.target.name;
+  $(`#${name}`).attr("data-mode", mode);
+}

@@ -853,3 +853,13 @@ table .table_sort span {
 .ck-toolbar {
   border: none !important;
 }
+
+
+.modewrap > div {
+ display: none;
+}
+
+.modewrap[data-mode="new"] .type_con,
+.modewrap[data-mode="upload"] .upload_box{
+  display: flex;
+ }
