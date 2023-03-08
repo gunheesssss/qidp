@@ -415,19 +415,19 @@ section {
 }
 
 .main_table thead tr th:first-child>div {
-  padding-left: 21px;
+  padding-left: 15px;
 }
 
 .main_table thead tr th:last-child>div,
 .main_table tbody tr td:last-child p {
-  padding-right: 16px;
+  padding-right: 10px;
 }
 
 .main_table tbody tr td:first-child p {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
   border-left: 5px solid var(--gray4);
-  padding-left: 16px;
+  padding-left: 10px;
 }
 
 .main_table tbody tr td:last-child p {

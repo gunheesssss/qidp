@@ -1,9 +1,87 @@
-<link rel="stylesheet" type="text/css" href="./modal/reference.css" />
-<div class="reference_modal">
+<link rel="stylesheet" type="text/css" href="./modal/ref.css" />
+<div class="ref_modal">
+  <div class="ref_search">
+    <div class="search_wrap">
+      <div class="search">
+        <img class="icon" src="../../../public/image/search.svg" alt="" />
+        <input type="text" placeholder="문서명/서식코드" />
+      </div>
+      <button class="search_btn">
+        <div class="icon"></div>
+        <span>검색</span>
+        <img class="icon" src="../../../public/image/btn_search.svg" alt="" />
+      </button>
+    </div>
+    <div class="main_table">
+      <table>
+        <colgroup>
+          <col style="width: 22%" />
+          <col style="width: 34%" />
+          <col style="width: 22%" />
+          <col style="width: 22%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>
+              <div class="td_c">
+                <span>문서번호</span>
+              </div>
+            </th>
+            <th>
+              <div class="td_l">
+                <span>문서명</span>
+              </div>
+            </th>
+            <th>
+              <div class="td_c">
+                <span>문서유형</span>
+              </div>
+            </th>
+            <th>
+              <div class="td_c">
+                <span>최종변경일시</span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="active">
+            <td>
+              <p class="td_c">123</p>
+            </td>
+            <td>
+              <p class="td_l">상품명</p>
+            </td>
+            <td>
+              <p class="td_c">상품소분류</p>
+            </td>
+            <td>
+              <p class="td_c">문서유형</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="td_c">123</p>
+            </td>
+            <td>
+              <p class="td_l">상품명</p>
+            </td>
+            <td>
+              <p class="td_c">상품소분류</p>
+            </td>
+            <td>
+              <p class="td_c">문서유형</p>
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
   <div class="index_content">
     <div class="search">
       <img class="icon" src="../../../public/image/search.svg" alt="" />
-      <input type="text" placeholder="목차검색" />
+      <input type="text" placeholder="키워드검색" />
       <button>
         <img
           class="icon"

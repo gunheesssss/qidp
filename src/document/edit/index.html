@@ -18,7 +18,7 @@
         $('header').load('../../../public/component/header.html');
         $('nav').load('../../../public/component/nav.html');
         $("[data-modal='search']").load('./modal/search.html');
-        $("[data-modal='reference']").load('./modal/reference.html');
+        $("[data-modal='ref']").load('./modal/ref.html');
         $("[data-modal='contrast']").load('./modal/contrast.html');
         $("[data-modal='record']").load('./modal/record.html');
         $("[data-modal='reg']").load('./modal/reg.html');
@@ -205,7 +205,7 @@
           </div>
           <div class="accordion">
             <div class="acc_header">
-              <button onclick="showModal('reg', '문서등록')">
+              <button>
                 <img
                   class="icon"
                   src="../../../public/image/doc_move_right_view.svg"
@@ -213,28 +213,28 @@
                 />
               </button>
               <div class="right_area">
-                <button onclick="showModal('search', '문서검색')">
+                <button onclick="showModal('reg', '문서등록')" title="문서등록">
                   <img
                     class="icon"
                     src="../../../public/image/doc_search_document.svg"
                     alt=""
                   />
                 </button>
-                <button onclick="showModal('reference', '내용조회')">
+                <button onclick="showModal('ref', '내용조회')"  title="내용조회">
                   <img
                     class="icon"
                     src="../../../public/image/doc_undefined_view.svg"
                     alt=""
                   />
                 </button>
-                <button onclick="showModal('contrast', '신구대비표')">
+                <button onclick="showModal('contrast', '신구대비표')"  title="신구대비표">
                   <img
                     class="icon"
                     src="../../../public/image/doc_compare_document.svg"
                     alt=""
                   />
                 </button>
-                <button onclick="showModal('record', '개정이력')">
+                <button onclick="showModal('record', '개정이력')" title="개정이력">
                   <img
                     class="icon"
                     src="../../../public/image/doc_history_document.svg"
@@ -320,7 +320,7 @@
           </div>
         </div>
         <div class="modal_content" data-modal="search"></div>
-        <div class="modal_content" data-modal="reference"></div>
+        <div class="modal_content" data-modal="ref"></div>
         <div class="modal_content" data-modal="contrast"></div>
         <div class="modal_content" data-modal="record"></div>
         <div class="modal_content" data-modal="reg"></div>
