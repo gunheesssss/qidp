@@ -32,7 +32,7 @@ header .left_area select {
   width: 180px;
   color: var(--white);
   cursor: pointer;
-  padding: 0 3px;
+  padding: 0 5px;
 }
 
 header .right_area {
@@ -72,7 +72,7 @@ header .header_control .control_left {
 header .header_control .zoom_wrap {
   display: flex;
   align-items: center;
-  margin: 0 14px 0 10px;
+  margin: 0 10px;
 }
 
 header .header_control .zoom_wrap span {
@@ -83,15 +83,15 @@ header .header_control .zoom_wrap span {
   margin: 0 3px;
 }
 
-header .header_control .title {
+header .header_control input[type="text"] {
   flex-grow: 1;
   flex-shrink: 1;
   overflow: hidden;
   color: var(--white);
   width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-right: 10px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
 }
 
 header .conrol_btn {
