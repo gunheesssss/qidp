@@ -3,6 +3,11 @@
   height: 15px;
 }
 
+.icon.color_i{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 header {
   display: flex;
   justify-content: space-between;
