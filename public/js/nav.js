@@ -102,7 +102,7 @@ $(function () {
     function addMenu(mainData) {
         const subMenu = menu[mainData].subMenu.map(v => `
             <li onclick="onClickSubNav('${mainData}', '${v.value}')" data-subnav="${v.value}">
-                <img class="icon" src="../../../public/image/nav_${v.value}.svg" alt="">
+                <img class="icon color_i" src="../../../public/image/nav_${v.value}.svg" alt="">
                 <span>${v.name}</span>
             </li>
         `)

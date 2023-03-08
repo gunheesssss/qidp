@@ -410,3 +410,7 @@ input[type='date']:valid::before {
 .fields > * {
   width: calc(50% - 5px)
 }
+
+.color_i{
+  filter: invert(100%);
+}
