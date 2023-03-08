@@ -2,73 +2,76 @@ $(function () {
     const menu = {
         template: {
             name: "템플릿관리",
+            icon:"menu_document",
             subMenu: [
                 {
                     name: "항목관리",
                     value : "item",
-                    icon: ""
+                    icon: "item"
                 },
                 {
                     name: "검증항목관리",
                     value : "verify",
-                    icon: ""
+                    icon: "class"
                 },
                 {
                     name: "목차관리",
                     value : "table",
-                    icon: ""
+                    icon: "table"
                 },
                 {
                     name: "서식관리",
                     value : "form",
-                    icon: ""
+                    icon: "form"
                 },
                 {
                     name: "표준약관관리",
                     value : "term",
-                    icon: ""
+                    icon: "term"
                 },
-          
+
             ]
         },
         product: {
             name: "상품관리",
+            icon:"nav_manage",
             subMenu: [
                 {
                     name: "상품항목관리",
                     value : "proditem",
-                    icon: ""
+                    icon: "proditem"
                 },
                 {
                     name: "상품분류관리",
                     value : "class",
-                    icon: ""
+                    icon: "class"
                 },
                 {
                     name: "상품정보관리",
                     value : "info",
-                    icon: ""
+                    icon: "info"
                 },
 
             ]
         },
         document: {
             name: "기초서류관리",
+            icon:"nav_edit",
             subMenu: [
                 {
                     name: "문서관리",
                     value : "manage",
-                    icon: ""
+                    icon: "manage"
                 },
                 {
                     name: "문서작성/편집",
                     value : "edit",
-                    icon: ""
+                    icon: "edit"
                 },
                 {
                     name: "문서일괄편집",
                     value : "bloc",
-                    icon: ""
+                    icon: "bloc"
                 },
             ]
         },
@@ -77,7 +80,7 @@ $(function () {
     let navData = "";
     const mainPath = new URL(location.href).pathname.split("/")[2];
     const subPath = new URL(location.href).pathname.split("/")[3];
-    
+
     $(document).ready(function(){
         if(["edit"].includes(subPath)) $(".header_control").addClass("show");
 
@@ -111,6 +114,19 @@ $(function () {
     }
 
     function addMenu(mainData) {
+
+
+        // //<----
+        // // mainData: 클릭한 그것this의 dataset 값(예:template)
+        // const topMenuWithIcon = menu[mainData].map((topMenu)=> `<h1>
+        //     <img class="icon color_i" src="../../../public/image/${topMenu.icon}.svg" alt="">
+        //     <span id="menu_title">${topMenu.name}</span>
+        // </h1> ` )
+
+        // $(".sub_menu > .title").html(topMenuWithIcon)
+        // //---->
+
+
         const subMenu = menu[mainData].subMenu.map(v => `
             <li onclick="onClickSubNav('${mainData}', '${v.value}')" data-subnav="${v.value}">
                 <img class="icon color_i" src="../../../public/image/nav_${v.icon}.svg" alt="">
@@ -124,7 +140,7 @@ $(function () {
 
 
 });
-  
+
 function onClickSubNav(mainData, value){
     console.log(["bloc", "verify"].includes(value));
     if(["bloc", "verify"].includes(value)) return alert("개발 중인 페이지입니다.");
