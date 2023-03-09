@@ -1,6 +1,6 @@
 $(function () {
     const menu = {
-        template: {
+        dfm: {
             name: "템플릿관리",
             icon:"menu_document",
             subMenu: [
@@ -32,7 +32,7 @@ $(function () {
 
             ]
         },
-        product: {
+        pim: {
             name: "상품관리",
             icon:"nav_manage",
             subMenu: [
@@ -54,7 +54,7 @@ $(function () {
 
             ]
         },
-        document: {
+        dm: {
             name: "기초서류관리",
             icon:"nav_edit",
             subMenu: [
