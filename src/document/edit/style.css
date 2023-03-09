@@ -47,4 +47,5 @@ section .accordion ul li {
 }
 section .accordion .list_content {
   height: 500px;
+  overflow-y: auto;
 }

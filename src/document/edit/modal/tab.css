@@ -22,10 +22,10 @@
     border-left: 1px solid var(--gray5);
 }
 
-.accordion .list_title.active + .list_content {
+.tab_modal .accordion .list_title.active + .list_content {
     display: block;
 }
-.accordion .list_title .list_txt {
+.tab_modal .accordion .list_title .list_txt {
     width: 20px;
     height: 20px;
     border-radius: 2px;
