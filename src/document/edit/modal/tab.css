@@ -1,0 +1,36 @@
+.tab_modal {
+    width: 1200px;
+    height: 680px;
+    display: flex;
+}
+
+.tab_modal .acc_wrap {
+    width: 40%;
+    display: flex;
+}
+
+.tab_modal .acc_wrap > div {
+    width: 50%;
+    height: 100%;
+}
+.tab_modal .acc_wrap > div:first-child {
+    border-right: 1px solid var(--gray5);
+}
+
+.tab_modal .form_area {
+    width: 60%;
+    border-left: 1px solid var(--gray5);
+}
+
+.accordion .list_title.active + .list_content {
+    display: block;
+}
+.accordion .list_title .list_txt {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray3);
+}

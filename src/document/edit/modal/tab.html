@@ -1,0 +1,86 @@
+<link rel="stylesheet" type="text/css" href="./modal/tab.css" />
+<div class="tab_modal">
+  <div class="acc_wrap">
+      <div class="accordion">
+        <ul>
+          <li>
+            <p class="list_title active">
+              <span class="list_txt">ㄱ</span>
+              <img
+                class="icon"
+                src="../../../public/image/doc_viewMore_right.svg"
+                alt=""
+              />
+            </p>
+            <ul class="list list_content">
+                <li>가나다</li>
+                <li>가나다라</li>
+                <li class="active">갱갱갱</li>
+              </ul>
+          </li>
+          <li>
+            <p class="list_title">
+              <span class="list_txt">ㄴ</span>
+              <img
+                class="icon"
+                src="../../../public/image/doc_viewMore_right.svg"
+                alt=""
+              />
+            </p>
+            <ul class="list list_content">
+                <li class="active">나나나</li>
+              </ul>
+          </li>
+          <li>
+            <p class="list_title">
+              <span class="list_txt">ㄷ</span>
+              <img
+                class="icon"
+                src="../../../public/image/doc_viewMore_right.svg"
+                alt=""
+              />
+            </p>
+            <ul class="list list_content">
+                <li class="active">다다다</li>
+              </ul>
+          </li>
+          <li>
+            <p class="list_title">
+              <span class="list_txt">ㄹ</span>
+              <img
+                class="icon"
+                src="../../../public/image/doc_viewMore_right.svg"
+                alt=""
+              />
+            </p>
+            <ul class="list list_content">
+                <li class="active">라라라</li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="accordion">
+        <ul>
+          <li>
+            <p class="list_title">
+              <img
+                class="icon"
+                src="../../../public/image/doc_viewMore_right.svg"
+                alt=""
+              />
+            </p>
+            <div class="list_content">
+            </div>
+          </li>
+
+        </ul>
+      </div>
+  </div>
+  <div class="form_area">
+    <div id="tab_editor">텍스트를 입력해주세요</div>
+  </div>
+</div>
+
+<script>
+    ClassicEditor.create(document.querySelector('#tab_editor'));
+</script>

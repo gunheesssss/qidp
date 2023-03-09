@@ -763,7 +763,7 @@ table .table_sort span {
   border-bottom: 1px solid var(--gray5);
 }
 
-.accordion ul {
+.accordion > ul {
   overflow-y: auto;
 }
 
@@ -787,8 +787,8 @@ table .table_sort span {
 }
 
 .accordion .list_title .icon {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 .accordion .list_content {
