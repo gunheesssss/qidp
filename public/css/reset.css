@@ -248,18 +248,23 @@ select:required:invalid {
   justify-content: center;
   width: 14px;
   height: 14px;
+  border: 1px solid var(--gray5);
+  border-radius: 2px;
 }
 
-.check_style .check_full {
+.check_style img {
   display: none;
+  width: 10px;
+  height: 10px;
 }
 
-.check_label input[type="checkbox"]:checked + .check_style .check_empty {
-  display: none;
+.check_label input[type="checkbox"]:checked + .check_style img{
+  display: block;
 }
 
-.check_label input[type="checkbox"]:checked + .check_style .check_full {
-  display: var(--black);
+.check_label input[type="checkbox"]:checked + .check_style {
+  background-color: var(--blue);
+  border: none;
 }
 
 .check_label span {

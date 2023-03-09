@@ -745,15 +745,11 @@ table .table_sort span {
   padding-left: 20px;
 }
 
-.index_content .list_wrap .list_title {
+.index_content .list_wrap .itme_title {
   display: flex;
   align-items: center;
   padding: 5px 0;
   cursor: pointer;
-}
-
-.index_content .list_wrap .list_title img {
-  margin-right: 4px;
 }
 
 /* 아코디언 */
