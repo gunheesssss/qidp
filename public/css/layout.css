@@ -742,14 +742,43 @@ table .table_sort span {
 }
 
 .index_content .list_wrap ul:not(:first-child) {
-  padding-left: 20px;
+  padding-left: 16px;
 }
 
-.index_content .list_wrap .itme_title {
+.index_content .list_wrap .item_title {
   display: flex;
   align-items: center;
-  padding: 5px 0;
+  height: 26px;
   cursor: pointer;
+}
+
+.index_content .list_wrap .item_title span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 5px;
+}
+
+.list_wrap .check_label span {
+  margin: 0;
+  width: calc(100% - 14px);
+  padding-left: 5px;
+}
+
+.index_content .list_wrap .item_em {
+  display: flex;
+  align-items: center;
+}
+.index_content .list_wrap .item_em::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--black);
+  margin-right: 5px;
+}
+.index_content .list_wrap .item_em span {
+  width: calc(100% - 9px);
 }
 
 /* 아코디언 */
