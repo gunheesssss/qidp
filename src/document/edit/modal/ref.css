@@ -6,7 +6,7 @@
 }
 
 .ref_modal .ref_search{ 
-  width: calc(50% - 120px);
+  width: calc(38% - 120px);
   padding: 10px;
 }
 .ref_search .search_wrap {
@@ -44,6 +44,6 @@
 }
 
 .ref_modal .form_area {
-  width: calc(50% - 120px);
+  width: calc(62% - 120px);
   height: 100%;
 }

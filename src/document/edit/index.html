@@ -18,11 +18,11 @@
         $('header').load('../../../public/component/header.html');
         $('nav').load('../../../public/component/nav.html');
         $("[data-modal='search']").load('./modal/search.html');
+        $("[data-modal='reg']").load('./modal/reg.html');
         $("[data-modal='ref']").load('./modal/ref.html');
         $("[data-modal='contrast']").load('./modal/contrast.html');
+        $("[data-modal='tab']").load('./modal/tab.html');
         $("[data-modal='record']").load('./modal/record.html');
-        $("[data-modal='reg']").load('./modal/reg.html');
-
       });
     </script>
     <header></header>
@@ -216,7 +216,7 @@
                 <button onclick="showModal('reg', '문서등록')" title="문서등록">
                   <img
                     class="icon color_i"
-                    src="../../../public/image/template_selected_code.svg"
+                    src="../../../public/image/doc_create_item.svg"
                     alt=""
                   />
                 </button>
@@ -231,6 +231,13 @@
                   <img
                     class="icon color_i"
                     src="../../../public/image/doc_compare_document.svg"
+                    alt=""
+                  />
+                </button>
+                <button onclick="showModal('tab', '색인표')"  title="색인표">
+                  <img
+                    class="icon color_i"
+                    src="../../../public/image/doc_tab.svg"
                     alt=""
                   />
                 </button>
@@ -319,11 +326,11 @@
             </button>
           </div>
         </div>
-        <div class="modal_content" data-modal="search"></div>
+        <div class="modal_content" data-modal="reg"></div>
         <div class="modal_content" data-modal="ref"></div>
         <div class="modal_content" data-modal="contrast"></div>
+        <div class="modal_content" data-modal="tab"></div>
         <div class="modal_content" data-modal="record"></div>
-        <div class="modal_content" data-modal="reg"></div>
       </div>
     </div>
     <script>
